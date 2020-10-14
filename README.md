@@ -5,4 +5,5 @@ This repo Contains all the works for building Sankatmochan bot
  <img  width="600" height="400" src="https://github.com/Amanmishra267/E--Yantra-Sankatmochan-Bot-/blob/main/sm_bot_artwork.jpeg"><br>
 </p>
 
-
+- Task 0 : 19 October 2020
+- Task 1 : 02 November 2020
