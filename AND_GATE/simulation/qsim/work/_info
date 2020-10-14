@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Tenacious_Akshat/Documents/AND_GATE/simulation/qsim
+vAnd_Gate
+Z1 !s110 1602667716
+!i10b 1
+!s100 [fNON6GS;ZeAgM^`QKYe@0
+IPfJA3c@?Pj?3E[TZNz1dg0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1602667699
+Z4 8AND_GATE.vo
+Z5 FAND_GATE.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1602667715.000000
+Z8 !s107 AND_GATE.vo|
+Z9 !s90 -work|work|AND_GATE.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@and_@gate
+vAnd_Gate_vlg_vec_tst
+R1
+!i10b 1
+!s100 c9RiHVm@LW>U6R:IAheJC3
+I>=nW^F0G>?7c9QIcWz=Ad0
+R2
+R0
+w1602667698
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1602667716.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@and_@gate_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 8njLGag8ZL3HHoNaKekRC1
+Ii5MOK?4YB=]S8U9DiWE5=1
+R2
+R0
+R3
+R4
+R5
+L0 122
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
