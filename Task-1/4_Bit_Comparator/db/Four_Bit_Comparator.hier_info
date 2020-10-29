@@ -1,0 +1,68 @@
+|Four_Bit_Comparator_verilog
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+A_Greater << Two_Bit_Comparator:b2v_inst3.A_Greater
+Equal << Two_Bit_Comparator:b2v_inst3.Equal
+B_Greater << Two_Bit_Comparator:b2v_inst3.B_Greater
+
+
+|Four_Bit_Comparator_verilog|Two_Bit_Comparator:b2v_inst1
+A1 => o2.IN0
+A1 => w3.IN0
+A1 => w5.IN0
+A0 => o1.IN0
+A0 => w4.IN1
+A0 => w6.IN1
+B1 => o2.IN1
+B1 => w5.IN1
+B1 => w3.IN1
+B0 => o1.IN1
+B0 => w6.IN1
+B0 => w4.IN1
+A_Greater <= A_Greater.DB_MAX_OUTPUT_PORT_TYPE
+Equal <= Equal.DB_MAX_OUTPUT_PORT_TYPE
+B_Greater <= B_Greater.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Four_Bit_Comparator_verilog|Two_Bit_Comparator:b2v_inst2
+A1 => o2.IN0
+A1 => w3.IN0
+A1 => w5.IN0
+A0 => o1.IN0
+A0 => w4.IN1
+A0 => w6.IN1
+B1 => o2.IN1
+B1 => w5.IN1
+B1 => w3.IN1
+B0 => o1.IN1
+B0 => w6.IN1
+B0 => w4.IN1
+A_Greater <= A_Greater.DB_MAX_OUTPUT_PORT_TYPE
+Equal <= Equal.DB_MAX_OUTPUT_PORT_TYPE
+B_Greater <= B_Greater.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Four_Bit_Comparator_verilog|Two_Bit_Comparator:b2v_inst3
+A1 => o2.IN0
+A1 => w3.IN0
+A1 => w5.IN0
+A0 => o1.IN0
+A0 => w4.IN1
+A0 => w6.IN1
+B1 => o2.IN1
+B1 => w5.IN1
+B1 => w3.IN1
+B0 => o1.IN1
+B0 => w6.IN1
+B0 => w4.IN1
+A_Greater <= A_Greater.DB_MAX_OUTPUT_PORT_TYPE
+Equal <= Equal.DB_MAX_OUTPUT_PORT_TYPE
+B_Greater <= B_Greater.DB_MAX_OUTPUT_PORT_TYPE
+
+

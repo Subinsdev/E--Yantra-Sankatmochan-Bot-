@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/amshra267/4_Bit_Comparator/simulation/qsim
+vhard_block
+Z1 !s110 1603885359
+!i10b 1
+!s100 @n>CJfN?VUOM<6H@bcABB2
+Ie9V[;2d1RXY]THBL`dB2;1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1603885359
+Z4 8Four_Bit_Comparator.vo
+Z5 FFour_Bit_Comparator.vo
+L0 224
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1603885359.000000
+Z8 !s107 Four_Bit_Comparator.vo|
+Z9 !s90 -work|work|Four_Bit_Comparator.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vTwo_Bit_Comparator
+R1
+!i10b 1
+!s100 =f5i_Hmj3kz@ooPYA^3Ca3
+I6h?eT^5IR_:_QfP@oH:V]0
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@two_@bit_@comparator
+vTwo_Bit_Comparator_vlg_vec_tst
+R1
+!i10b 1
+!s100 3GQ@GLCLI7W4@:bb2T:ho2
+I2@9BCLaOBYRgVKbVD:CG80
+R2
+R0
+w1603885358
+8Two_bit_VWF.vwf.vt
+FTwo_bit_VWF.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Two_bit_VWF.vwf.vt|
+!s90 -work|work|Two_bit_VWF.vwf.vt|
+!i113 1
+R10
+R11
+n@two_@bit_@comparator_vlg_vec_tst
