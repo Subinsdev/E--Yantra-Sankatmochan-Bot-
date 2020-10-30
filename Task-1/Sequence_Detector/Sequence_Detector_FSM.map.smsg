@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at sequence_detector_fsm.v(34): always construct contains both blocking and non-blocking assignments File: C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/sequence_detector_fsm.v Line: 34
