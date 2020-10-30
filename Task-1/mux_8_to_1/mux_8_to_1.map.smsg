@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at mux_4_to_1.v(45): always construct contains both blocking and non-blocking assignments File: C:/Users/dell pc/Documents/e-yantra/mux_8_to_1/mux_4_to_1.v Line: 45
