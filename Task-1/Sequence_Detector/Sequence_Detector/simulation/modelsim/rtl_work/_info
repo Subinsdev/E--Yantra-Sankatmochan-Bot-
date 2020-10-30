@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/simulation/modelsim
+vsequence_detector_fsm
+!s110 1604059779
+!i10b 1
+!s100 L?Q7ES8;3G31NF0Y<7YQa0
+IUc<[^OQjdN9fc_`3al?]L0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604059689
+8C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/sequence_detector_fsm.v
+FC:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/sequence_detector_fsm.v
+L0 21
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1604059779.000000
+!s107 C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/sequence_detector_fsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector|C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/sequence_detector_fsm.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector
+Z3 tCvgOpt 0
+vSequence_Detector_tb_Vector
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1604059785
+!i10b 1
+!s100 Sddn[[ijZ<9k37JLNTfah2
+IJjRm>RKm5l>E`Uk_0A1930
+R1
+!s105 Sequence_Detector_tb_Vector_sv_unit
+S1
+R0
+w1604059516
+8C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/Sequence_Detector_tb_Vector.sv
+FC:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/Sequence_Detector_tb_Vector.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1604059784.000000
+!s107 C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/Sequence_Detector_tb_Vector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector|C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector/Sequence_Detector_tb_Vector.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/Tenacious_Akshat/Desktop/Sequence_Detector/Sequence_Detector
+R3
+n@sequence_@detector_tb_@vector
