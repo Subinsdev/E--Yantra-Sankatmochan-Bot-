@@ -1,0 +1,38 @@
+|UART_Transmitter
+CLOCK => r_data_bits[0].CLK
+CLOCK => r_data_bits[1].CLK
+CLOCK => r_data_bits[2].CLK
+CLOCK => r_data_bits[3].CLK
+CLOCK => r_data_bits[4].CLK
+CLOCK => r_data_bits[5].CLK
+CLOCK => r_data_bits[6].CLK
+CLOCK => r_data_bits[7].CLK
+CLOCK => r_TX_DONE.CLK
+CLOCK => O_TX_SERIAL~reg0.CLK
+CLOCK => r_bit_index[0].CLK
+CLOCK => r_bit_index[1].CLK
+CLOCK => r_bit_index[2].CLK
+CLOCK => r_clock_count[0].CLK
+CLOCK => r_clock_count[1].CLK
+CLOCK => r_clock_count[2].CLK
+CLOCK => r_clock_count[3].CLK
+CLOCK => r_clock_count[4].CLK
+CLOCK => r_clock_count[5].CLK
+CLOCK => r_clock_count[6].CLK
+CLOCK => r_clock_count[7].CLK
+CLOCK => r_clock_count[8].CLK
+CLOCK => r_state~1.DATAIN
+TX_DATA_VALID => Selector15.IN3
+TX_DATA_VALID => Selector14.IN2
+TX_BYTE[0] => r_data_bits.DATAA
+TX_BYTE[1] => r_data_bits.DATAA
+TX_BYTE[2] => r_data_bits.DATAA
+TX_BYTE[3] => r_data_bits.DATAA
+TX_BYTE[4] => r_data_bits.DATAA
+TX_BYTE[5] => r_data_bits.DATAA
+TX_BYTE[6] => r_data_bits.DATAA
+TX_BYTE[7] => r_data_bits.DATAA
+O_TX_SERIAL <= O_TX_SERIAL~reg0.DB_MAX_OUTPUT_PORT_TYPE
+O_TX_DONE <= r_TX_DONE.DB_MAX_OUTPUT_PORT_TYPE
+
+
