@@ -1,0 +1,80 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/simulation/modelsim
+vmux_4_to_1
+Z1 !s110 1604061955
+!i10b 1
+!s100 oJKhi?_cikN4j2]j@6Y?`1
+I1XE=ejFlRNB_0eGdSS_;?1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1604061438
+8/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_4_to_1.v
+F/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_4_to_1.v
+L0 21
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1604061955.000000
+!s107 /home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_4_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1|/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_4_to_1.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1
+Z8 tCvgOpt 0
+vmux_8_to_1_bdf
+R1
+!i10b 1
+!s100 :dMB8KHPjIZ?C^d<VdWEd3
+I`Q>[Alj]9ga6hb]A=Ob7N3
+R2
+R0
+R3
+8/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_8_to_1_bdf.v
+F/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_8_to_1_bdf.v
+L0 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_8_to_1_bdf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1|/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/mux_8_to_1_bdf.v|
+!i113 1
+R6
+R7
+R8
+vMux_tb_Vector
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 W;RYkVH_D]O<3S5gDDU<A3
+IX>CA=fHdG[@kBXMeangCW2
+R2
+!s105 Mux_tb_Vector_sv_unit
+S1
+R0
+R3
+8/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/Mux_tb_Vector.sv
+F/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/Mux_tb_Vector.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/Mux_tb_Vector.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1|/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1/Mux_tb_Vector.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/mux_8_to_1
+R8
+n@mux_tb_@vector

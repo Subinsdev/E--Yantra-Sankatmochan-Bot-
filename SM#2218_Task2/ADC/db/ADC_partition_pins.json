@@ -1,0 +1,169 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "din",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_DATA_CH3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sclk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "dout",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

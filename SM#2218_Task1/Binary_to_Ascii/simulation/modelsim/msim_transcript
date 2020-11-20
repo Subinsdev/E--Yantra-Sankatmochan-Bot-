@@ -1,0 +1,57 @@
+# do Binary_to_Ascii_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/amshra/intelFPGA/19.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii {/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii/Binary_to_Ascii.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:14 on Oct 30,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii" /home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii/Binary_to_Ascii.v 
+# -- Compiling module Binary_to_Ascii
+# 
+# Top level modules:
+# 	Binary_to_Ascii
+# End time: 18:12:14 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii {/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii/Binary_to_Ascii_tb_Vector.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:14 on Oct 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii" /home/amshra/E--Yantra-Sankatmochan-Bot-/Task-1/Binary_to_Ascii/Binary_to_Ascii_tb_Vector.sv 
+# -- Compiling module Binary_to_Ascii_tb_Vector
+# 
+# Top level modules:
+# 	Binary_to_Ascii_tb_Vector
+# End time: 18:12:14 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Binary_to_Ascii_tb_Vector
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Binary_to_Ascii_tb_Vector 
+# Start time: 18:12:14 on Oct 30,2020
+# Loading sv_std.std
+# Loading work.Binary_to_Ascii_tb_Vector
+# Loading work.Binary_to_Ascii
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 160 ns
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# CONGRATULATIONS YOUR DESIGN WORKS FINE
+# End time: 18:14:04 on Oct 30,2020, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 8
