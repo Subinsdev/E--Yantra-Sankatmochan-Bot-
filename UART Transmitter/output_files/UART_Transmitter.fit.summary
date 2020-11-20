@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Nov 04 18:12:27 2020
+Fitter Status : Successful - Fri Nov 20 23:43:33 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : UART_Transmitter
 Top-level Entity Name : UART_Transmitter
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 47 / 22,320 ( < 1 % )
-    Total combinational functions : 47 / 22,320 ( < 1 % )
+Total logic elements : 54 / 22,320 ( < 1 % )
+    Total combinational functions : 54 / 22,320 ( < 1 % )
     Dedicated logic registers : 27 / 22,320 ( < 1 % )
 Total registers : 27
 Total pins : 12 / 154 ( 8 % )

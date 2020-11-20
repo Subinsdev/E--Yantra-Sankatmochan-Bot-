@@ -1,5 +1,5 @@
 Flow report for UART_Transmitter
-Wed Nov 04 18:12:36 2020
+Fri Nov 20 23:43:41 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 04 18:12:36 2020       ;
+; Flow Status                        ; Successful - Fri Nov 20 23:43:41 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; UART_Transmitter                            ;
 ; Top-level Entity Name              ; UART_Transmitter                            ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 47 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 47 / 22,320 ( < 1 % )                       ;
+; Total logic elements               ; 54 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 54 / 22,320 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 27 / 22,320 ( < 1 % )                       ;
 ; Total registers                    ; 27                                          ;
 ; Total pins                         ; 12 / 154 ( 8 % )                            ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2020 18:12:07 ;
+; Start date & time ; 11/20/2020 23:43:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; UART_Transmitter    ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 66160497350483.160449372735004         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 66160497350483.160589599406704         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,12 +99,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4736 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 5270 MB             ; 00:00:07                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4689 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4735 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5271 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4690 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4768 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4645 MB             ; 00:00:01                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:32                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

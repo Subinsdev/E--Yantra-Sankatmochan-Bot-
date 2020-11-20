@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dell pc/Documents/e-yantra/UART Transmitter/simulation/qsim
+vhard_block
+Z1 !s110 1605895425
+!i10b 1
+!s100 fW7oTe[7?PbK@omYkFAOR3
+IC8AH6LBKzTJT3OJQgo@KC2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1605895424
+Z4 8UART_Transmitter.vo
+Z5 FUART_Transmitter.vo
+L0 1801
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1605895425.000000
+Z8 !s107 UART_Transmitter.vo|
+Z9 !s90 -work|work|UART_Transmitter.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vUART_Transmitter
+R1
+!i10b 1
+!s100 SS^BDR77lTWAV5_QMOGaP3
+IeBln2@0mMX1F_MOd80V:X3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@u@a@r@t_@transmitter
+vUART_Transmitter_vlg_vec_tst
+R1
+!i10b 1
+!s100 >IE_he<zMeZ4L2[KDa<`E3
+Ia1:zAg>J^P4IGzGRJK;ME2
+R2
+R0
+w1605895423
+8Waveform8.vwf.vt
+FWaveform8.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform8.vwf.vt|
+!s90 -work|work|Waveform8.vwf.vt|
+!i113 1
+R10
+R11
+n@u@a@r@t_@transmitter_vlg_vec_tst
