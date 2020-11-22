@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/media/amshra267/sa44/E--Yantra-Sankatmochan-Bot-/SM#2218_Task2/ADC/simulation/qsim
 vADC
-Z1 !s110 1605887699
+Z1 !s110 1605893488
 !i10b 1
 !s100 :@1>_0j<<g[914N1Q7WN40
 I<FB^0gzgmVdCjYBAhXBVM3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1605887699
+Z3 w1605893487
 Z4 8ADC.vo
 Z5 FADC.vo
 L0 32
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1605887699.000000
+Z7 !s108 1605893488.000000
 Z8 !s107 ADC.vo|
 Z9 !s90 -work|work|ADC.vo|
 !i113 1
@@ -37,7 +37,7 @@ R1
 I=4iOV;haiPP1]E7^lnXVY3
 R2
 R0
-w1605887698
+R3
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 30

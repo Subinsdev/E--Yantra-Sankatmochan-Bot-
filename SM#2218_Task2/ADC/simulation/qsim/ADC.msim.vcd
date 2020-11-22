@@ -3,7 +3,7 @@ $comment
 		vcd file ADC.msim.vcd -direction
 $end
 $date
-	Fri Nov 20 21:24:59 2020
+	Fri Nov 20 23:01:28 2020
 $end
 $version
 	ModelSim Version 10.5b
