@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "O_TX_SERIAL",
+					"strict" : false
+				},
+				{
+					"name" : "O_TX_DONE",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "TX_DATA_VALID",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

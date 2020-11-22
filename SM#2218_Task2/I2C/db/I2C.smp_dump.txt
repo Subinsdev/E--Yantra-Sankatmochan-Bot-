@@ -1,0 +1,9 @@
+
+State Machine - |I2C_Control|r_state
+Name r_state.READ_DATA r_state.WAIT_1_CYCLE_2 r_state.START_OPERATION r_state.WAIT_1_CYCLE_1 r_state.SET_RESOLUTION r_state.IDLE 
+r_state.IDLE 0 0 0 0 0 0 
+r_state.SET_RESOLUTION 0 0 0 0 1 1 
+r_state.WAIT_1_CYCLE_1 0 0 0 1 0 1 
+r_state.START_OPERATION 0 0 1 0 0 1 
+r_state.WAIT_1_CYCLE_2 0 1 0 0 0 1 
+r_state.READ_DATA 1 0 0 0 0 1 

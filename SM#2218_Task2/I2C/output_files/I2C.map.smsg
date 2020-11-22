@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at I2C_Core_Verilog.v(9): object "reg_addr" differs only in case from object "REG_ADDR" in the same scope File: C:/Users/dell pc/Documents/e-yantra/I2C/I2C_Core_Verilog.v Line: 9
+Warning (10268): Verilog HDL information at I2C_Control.v(36): always construct contains both blocking and non-blocking assignments File: C:/Users/dell pc/Documents/e-yantra/I2C/I2C_Control.v Line: 36
