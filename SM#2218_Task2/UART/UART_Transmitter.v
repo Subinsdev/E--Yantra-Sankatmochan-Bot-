@@ -28,7 +28,7 @@ module UART_Transmitter(
 					r_bit_index = 0;
 					O_TX_SERIAL <= 1'b1;
 					r_TX_DONE <= 1'b1;
-					if(TX_DATA_VALID)
+					if(TX_DATA_VALID & next <=3)
 					begin
 						r_state <= TX_START_BIT;
 					end
@@ -55,8 +55,10 @@ module UART_Transmitter(
 							r_data_bits = 8'b01001101;
 						else if (next == 2)
 							r_data_bits = 8'b00000001;
-						else
+						else if (next == 3)
 							r_data_bits = 8'b00001000;
+						else
+							r_data_bits = 0;
 					end
 				end
 				

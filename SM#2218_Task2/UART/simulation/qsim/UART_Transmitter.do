@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work UART_Transmitter.vo
-vlog -work work Waveform8.vwf.vt
+vlog -work work Waveform.vwf.vt
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.UART_Transmitter_vlg_vec_tst
 vcd file -direction UART_Transmitter.msim.vcd
 vcd add -internal UART_Transmitter_vlg_vec_tst/*
@@ -15,3 +15,4 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
