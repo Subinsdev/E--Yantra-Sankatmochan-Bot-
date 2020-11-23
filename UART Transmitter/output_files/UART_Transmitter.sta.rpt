@@ -1,5 +1,5 @@
 Timing Analyzer report for UART_Transmitter
-Fri Nov 20 23:43:39 2020
+Mon Nov 23 17:55:29 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -117,13 +117,13 @@ https://fpgasoftware.intel.com/eula.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                       ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; 349.9 MHz ; 250.0 MHz       ; CLOCK      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 356.13 MHz ; 250.0 MHz       ; CLOCK      ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -138,7 +138,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; CLOCK ; -1.858 ; -37.688            ;
+; CLOCK ; -1.808 ; -33.573            ;
 +-------+--------+--------------------+
 
 
@@ -147,7 +147,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; CLOCK ; 0.357 ; 0.000              ;
+; CLOCK ; 0.342 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -172,112 +172,112 @@ No paths to report.
 +-------+--------+----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'CLOCK'                                                                                   ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node        ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -1.858 ; r_clock_count[1] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.790      ;
-; -1.858 ; r_clock_count[1] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.790      ;
-; -1.858 ; r_clock_count[1] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.790      ;
-; -1.858 ; r_clock_count[1] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.790      ;
-; -1.858 ; r_clock_count[1] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.790      ;
-; -1.852 ; r_clock_count[0] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.784      ;
-; -1.852 ; r_clock_count[0] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.784      ;
-; -1.852 ; r_clock_count[0] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.784      ;
-; -1.852 ; r_clock_count[0] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.784      ;
-; -1.852 ; r_clock_count[0] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.784      ;
-; -1.795 ; r_clock_count[1] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.728      ;
-; -1.790 ; r_clock_count[1] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.723      ;
-; -1.789 ; r_clock_count[0] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.722      ;
-; -1.788 ; r_clock_count[1] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.721      ;
-; -1.784 ; r_clock_count[0] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.717      ;
-; -1.782 ; r_clock_count[0] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.715      ;
-; -1.735 ; r_clock_count[6] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.667      ;
-; -1.735 ; r_clock_count[6] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.667      ;
-; -1.735 ; r_clock_count[6] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.667      ;
-; -1.735 ; r_clock_count[6] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.667      ;
-; -1.735 ; r_clock_count[6] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.667      ;
-; -1.731 ; r_clock_count[1] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.663      ;
-; -1.725 ; r_clock_count[0] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.657      ;
-; -1.724 ; r_clock_count[1] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.657      ;
-; -1.718 ; r_clock_count[0] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.651      ;
-; -1.698 ; r_clock_count[5] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.630      ;
-; -1.698 ; r_clock_count[5] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.630      ;
-; -1.698 ; r_clock_count[5] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.630      ;
-; -1.698 ; r_clock_count[5] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.630      ;
-; -1.698 ; r_clock_count[5] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.630      ;
-; -1.694 ; r_clock_count[1] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.627      ;
-; -1.694 ; r_clock_count[1] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.627      ;
-; -1.694 ; r_clock_count[1] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.627      ;
-; -1.694 ; r_clock_count[1] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.627      ;
-; -1.694 ; r_clock_count[1] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.627      ;
-; -1.692 ; r_clock_count[3] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.624      ;
-; -1.692 ; r_clock_count[3] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.624      ;
-; -1.692 ; r_clock_count[3] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.624      ;
-; -1.692 ; r_clock_count[3] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.624      ;
-; -1.692 ; r_clock_count[3] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.624      ;
-; -1.688 ; r_clock_count[0] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.621      ;
-; -1.688 ; r_clock_count[0] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.621      ;
-; -1.688 ; r_clock_count[0] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.621      ;
-; -1.688 ; r_clock_count[0] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.621      ;
-; -1.688 ; r_clock_count[0] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.621      ;
-; -1.672 ; r_clock_count[6] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.605      ;
-; -1.667 ; r_clock_count[6] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.600      ;
-; -1.665 ; r_clock_count[6] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.598      ;
-; -1.635 ; r_clock_count[5] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.568      ;
-; -1.630 ; r_clock_count[5] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.563      ;
-; -1.629 ; r_clock_count[3] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.562      ;
-; -1.628 ; r_clock_count[5] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.561      ;
-; -1.624 ; r_clock_count[3] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.557      ;
-; -1.622 ; r_clock_count[3] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.555      ;
-; -1.619 ; r_clock_count[4] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.551      ;
-; -1.619 ; r_clock_count[4] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.551      ;
-; -1.619 ; r_clock_count[4] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.551      ;
-; -1.619 ; r_clock_count[4] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.551      ;
-; -1.619 ; r_clock_count[4] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.551      ;
-; -1.609 ; r_clock_count[1] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.541      ;
-; -1.608 ; r_clock_count[6] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.540      ;
-; -1.603 ; r_clock_count[0] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.535      ;
-; -1.601 ; r_clock_count[6] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.534      ;
-; -1.592 ; r_clock_count[2] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.524      ;
-; -1.592 ; r_clock_count[2] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.524      ;
-; -1.592 ; r_clock_count[2] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.524      ;
-; -1.592 ; r_clock_count[2] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.524      ;
-; -1.592 ; r_clock_count[2] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.524      ;
-; -1.582 ; r_clock_count[1] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.514      ;
-; -1.576 ; r_clock_count[0] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.508      ;
-; -1.571 ; r_clock_count[6] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.504      ;
-; -1.571 ; r_clock_count[6] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.504      ;
-; -1.571 ; r_clock_count[6] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.504      ;
-; -1.571 ; r_clock_count[6] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.504      ;
-; -1.571 ; r_clock_count[6] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.504      ;
-; -1.571 ; r_clock_count[5] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.503      ;
-; -1.565 ; r_clock_count[3] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.497      ;
-; -1.564 ; r_clock_count[5] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.497      ;
-; -1.558 ; r_clock_count[3] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.491      ;
-; -1.556 ; r_clock_count[4] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.489      ;
-; -1.551 ; r_clock_count[4] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.484      ;
-; -1.549 ; r_clock_count[4] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.482      ;
-; -1.543 ; r_clock_count[8] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.475      ;
-; -1.543 ; r_clock_count[8] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.475      ;
-; -1.543 ; r_clock_count[8] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.475      ;
-; -1.543 ; r_clock_count[8] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.475      ;
-; -1.543 ; r_clock_count[8] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.063     ; 2.475      ;
-; -1.538 ; r_data_bits[0]   ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.471      ;
-; -1.534 ; r_clock_count[5] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
-; -1.534 ; r_clock_count[5] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
-; -1.534 ; r_clock_count[5] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
-; -1.534 ; r_clock_count[5] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
-; -1.534 ; r_clock_count[5] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
-; -1.529 ; r_clock_count[2] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.462      ;
-; -1.528 ; r_clock_count[3] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.461      ;
-; -1.528 ; r_clock_count[3] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.461      ;
-; -1.528 ; r_clock_count[3] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.461      ;
-; -1.528 ; r_clock_count[3] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.461      ;
-; -1.528 ; r_clock_count[3] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.461      ;
-; -1.524 ; r_clock_count[2] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.457      ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'CLOCK'                                                                                      ;
++--------+----------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; -1.808 ; r_clock_count[4]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.741      ;
+; -1.806 ; r_clock_count[4]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.739      ;
+; -1.804 ; r_clock_count[4]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.737      ;
+; -1.798 ; r_clock_count[5]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.731      ;
+; -1.796 ; r_clock_count[4]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.729      ;
+; -1.796 ; r_clock_count[5]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.729      ;
+; -1.794 ; r_clock_count[5]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.727      ;
+; -1.786 ; r_clock_count[5]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.719      ;
+; -1.765 ; r_clock_count[4]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.698      ;
+; -1.755 ; r_clock_count[5]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.688      ;
+; -1.674 ; r_clock_count[1]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.607      ;
+; -1.661 ; r_clock_count[7]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.594      ;
+; -1.659 ; r_clock_count[7]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.592      ;
+; -1.657 ; r_clock_count[7]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.590      ;
+; -1.655 ; r_clock_count[1]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.588      ;
+; -1.653 ; r_clock_count[1]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.586      ;
+; -1.651 ; r_clock_count[1]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.584      ;
+; -1.649 ; r_clock_count[7]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.582      ;
+; -1.647 ; r_clock_count[0]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.580      ;
+; -1.645 ; r_clock_count[0]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.578      ;
+; -1.643 ; r_clock_count[1]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.576      ;
+; -1.643 ; r_clock_count[0]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.576      ;
+; -1.635 ; r_clock_count[0]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.568      ;
+; -1.618 ; r_clock_count[7]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.551      ;
+; -1.612 ; r_clock_count[1]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.545      ;
+; -1.604 ; r_clock_count[0]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.537      ;
+; -1.601 ; r_clock_count[4]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.534      ;
+; -1.601 ; r_clock_count[4]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.534      ;
+; -1.601 ; r_clock_count[4]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.534      ;
+; -1.591 ; r_clock_count[5]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.524      ;
+; -1.591 ; r_clock_count[5]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.524      ;
+; -1.591 ; r_clock_count[5]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.524      ;
+; -1.589 ; r_state.TX_DATA_BITS ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 2.141      ;
+; -1.587 ; r_state.TX_DATA_BITS ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 2.139      ;
+; -1.585 ; r_state.TX_DATA_BITS ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 2.137      ;
+; -1.577 ; r_state.TX_DATA_BITS ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 2.129      ;
+; -1.564 ; r_clock_count[0]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.497      ;
+; -1.560 ; r_clock_count[4]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.493      ;
+; -1.552 ; r_clock_count[3]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.485      ;
+; -1.550 ; r_clock_count[5]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.483      ;
+; -1.546 ; r_state.TX_DATA_BITS ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 2.098      ;
+; -1.534 ; r_clock_count[6]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.467      ;
+; -1.532 ; r_clock_count[6]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.465      ;
+; -1.530 ; r_clock_count[6]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.463      ;
+; -1.522 ; r_clock_count[6]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.455      ;
+; -1.491 ; r_clock_count[6]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.424      ;
+; -1.484 ; r_clock_count[3]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.417      ;
+; -1.483 ; r_clock_count[8]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.416      ;
+; -1.482 ; r_clock_count[3]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.415      ;
+; -1.481 ; r_clock_count[8]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.414      ;
+; -1.480 ; r_clock_count[3]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.413      ;
+; -1.479 ; r_clock_count[8]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.412      ;
+; -1.472 ; r_clock_count[3]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.405      ;
+; -1.471 ; r_clock_count[8]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.404      ;
+; -1.464 ; r_data_bits[0]       ; O_TX_SERIAL~reg0    ; CLOCK        ; CLOCK       ; 1.000        ; -0.058     ; 2.401      ;
+; -1.454 ; r_clock_count[7]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.387      ;
+; -1.454 ; r_clock_count[7]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.387      ;
+; -1.454 ; r_clock_count[7]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.387      ;
+; -1.450 ; r_data_bits[1]       ; O_TX_SERIAL~reg0    ; CLOCK        ; CLOCK       ; 1.000        ; -0.058     ; 2.387      ;
+; -1.448 ; r_clock_count[1]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.381      ;
+; -1.448 ; r_clock_count[1]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.381      ;
+; -1.448 ; r_clock_count[1]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.381      ;
+; -1.447 ; r_clock_count[2]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.380      ;
+; -1.441 ; r_clock_count[3]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.374      ;
+; -1.440 ; r_clock_count[8]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.373      ;
+; -1.440 ; r_clock_count[0]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.373      ;
+; -1.440 ; r_clock_count[0]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.373      ;
+; -1.440 ; r_clock_count[0]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.373      ;
+; -1.427 ; r_clock_count[4]     ; r_data_bits[0]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.699      ;
+; -1.427 ; r_clock_count[4]     ; r_data_bits[1]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.699      ;
+; -1.427 ; r_clock_count[4]     ; r_data_bits[2]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.699      ;
+; -1.427 ; r_clock_count[4]     ; r_data_bits[3]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.699      ;
+; -1.427 ; r_clock_count[4]     ; r_data_bits[6]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.699      ;
+; -1.417 ; r_clock_count[5]     ; r_data_bits[0]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.689      ;
+; -1.417 ; r_clock_count[5]     ; r_data_bits[1]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.689      ;
+; -1.417 ; r_clock_count[5]     ; r_data_bits[2]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.689      ;
+; -1.417 ; r_clock_count[5]     ; r_data_bits[3]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.689      ;
+; -1.417 ; r_clock_count[5]     ; r_data_bits[6]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.277      ; 2.689      ;
+; -1.413 ; r_clock_count[7]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.346      ;
+; -1.388 ; r_clock_count[2]     ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.321      ;
+; -1.386 ; r_clock_count[2]     ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.319      ;
+; -1.384 ; r_clock_count[2]     ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.317      ;
+; -1.383 ; r_bit_index[0]       ; O_TX_SERIAL~reg0    ; CLOCK        ; CLOCK       ; 1.000        ; -0.086     ; 2.292      ;
+; -1.376 ; r_clock_count[2]     ; r_clock_count[1]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.309      ;
+; -1.345 ; r_clock_count[2]     ; r_clock_count[7]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.278      ;
+; -1.341 ; r_state.TX_DATA_BITS ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.893      ;
+; -1.334 ; r_state.TX_DATA_BITS ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.886      ;
+; -1.329 ; r_state.TX_DATA_BITS ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.881      ;
+; -1.328 ; r_state.TX_DATA_BITS ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.880      ;
+; -1.327 ; r_clock_count[6]     ; r_clock_count[0]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.260      ;
+; -1.327 ; r_clock_count[6]     ; r_clock_count[2]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.260      ;
+; -1.327 ; r_clock_count[6]     ; r_clock_count[3]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.260      ;
+; -1.296 ; r_clock_count[4]     ; r_state.TX_STOP_BIT ; CLOCK        ; CLOCK       ; 1.000        ; 0.303      ; 2.594      ;
+; -1.292 ; r_clock_count[4]     ; r_bit_index[1]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.303      ; 2.590      ;
+; -1.288 ; r_state.TX_START_BIT ; r_clock_count[5]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.840      ;
+; -1.286 ; r_state.TX_START_BIT ; r_clock_count[4]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.838      ;
+; -1.286 ; r_clock_count[6]     ; r_clock_count[8]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.062     ; 2.219      ;
+; -1.286 ; r_clock_count[5]     ; r_state.TX_STOP_BIT ; CLOCK        ; CLOCK       ; 1.000        ; 0.303      ; 2.584      ;
+; -1.284 ; r_state.TX_START_BIT ; r_clock_count[6]    ; CLOCK        ; CLOCK       ; 1.000        ; -0.443     ; 1.836      ;
+; -1.282 ; r_clock_count[5]     ; r_bit_index[1]      ; CLOCK        ; CLOCK       ; 1.000        ; 0.303      ; 2.580      ;
++--------+----------------------+---------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -285,106 +285,106 @@ No paths to report.
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; 0.357 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.577      ;
-; 0.357 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.577      ;
-; 0.357 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.342 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.342 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.342 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.342 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.342 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.358 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
+; 0.358 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
 ; 0.358 ; next[2]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
 ; 0.358 ; next[1]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
 ; 0.358 ; next[0]              ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
-; 0.358 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
-; 0.358 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
-; 0.358 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
-; 0.358 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.577      ;
-; 0.403 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.622      ;
-; 0.404 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.623      ;
-; 0.405 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.624      ;
-; 0.406 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.625      ;
-; 0.407 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.626      ;
-; 0.408 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.627      ;
-; 0.504 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.723      ;
-; 0.505 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.724      ;
-; 0.505 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.724      ;
-; 0.507 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.726      ;
-; 0.527 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.746      ;
-; 0.585 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.804      ;
-; 0.591 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.810      ;
-; 0.608 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.827      ;
-; 0.611 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.830      ;
-; 0.621 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.840      ;
-; 0.625 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.844      ;
-; 0.636 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.856      ;
-; 0.663 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.882      ;
-; 0.668 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.887      ;
-; 0.701 ; r_state.TX_STOP_BIT  ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.921      ;
-; 0.710 ; r_bit_index[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.930      ;
-; 0.733 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 0.951      ;
-; 0.735 ; r_state.CLEANUP      ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 0.953      ;
-; 0.738 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 0.958      ;
-; 0.786 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.006      ;
-; 0.802 ; r_state.TX_STOP_BIT  ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.022      ;
-; 0.824 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.043      ;
-; 0.828 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.048      ;
-; 0.835 ; r_state.TX_STOP_BIT  ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.055      ;
-; 0.837 ; r_bit_index[0]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.057      ;
-; 0.863 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.082      ;
-; 0.896 ; r_bit_index[2]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.116      ;
-; 0.905 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.124      ;
-; 0.908 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.128      ;
-; 0.909 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.129      ;
-; 0.910 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.130      ;
-; 0.911 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.130      ;
-; 0.911 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.131      ;
-; 0.929 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 1.147      ;
-; 0.937 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.157      ;
-; 0.960 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.179      ;
-; 0.988 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.208      ;
-; 0.998 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.218      ;
-; 1.015 ; r_clock_count[7]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.234      ;
-; 1.018 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.238      ;
-; 1.032 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.252      ;
-; 1.037 ; r_clock_count[8]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.256      ;
-; 1.040 ; r_bit_index[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.260      ;
-; 1.049 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.268      ;
-; 1.051 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.270      ;
-; 1.089 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.308      ;
-; 1.090 ; r_state.CLEANUP      ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.309      ;
-; 1.091 ; r_state.CLEANUP      ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.310      ;
-; 1.091 ; r_state.CLEANUP      ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.310      ;
-; 1.092 ; r_state.CLEANUP      ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.311      ;
-; 1.110 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.330      ;
-; 1.112 ; r_state.TX_DATA_BITS ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.332      ;
-; 1.117 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.337      ;
-; 1.118 ; r_clock_count[4]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.337      ;
-; 1.121 ; r_clock_count[2]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.340      ;
-; 1.130 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.349      ;
-; 1.144 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.364      ;
-; 1.146 ; r_clock_count[1]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.365      ;
-; 1.168 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.387      ;
-; 1.181 ; r_clock_count[5]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.400      ;
-; 1.184 ; r_state.TX_DATA_BITS ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.404      ;
-; 1.187 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.407      ;
-; 1.188 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.407      ;
-; 1.195 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.414      ;
-; 1.195 ; r_state.CLEANUP      ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.414      ;
-; 1.197 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.416      ;
-; 1.197 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.416      ;
-; 1.207 ; r_clock_count[5]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.426      ;
-; 1.224 ; r_data_bits[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.444      ;
-; 1.225 ; r_clock_count[3]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.444      ;
-; 1.234 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.453      ;
-; 1.237 ; r_state.TX_START_BIT ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.456      ;
-; 1.245 ; r_state.TX_STOP_BIT  ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.465      ;
-; 1.248 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.467      ;
-; 1.249 ; r_state.IDLE         ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.468      ;
-; 1.250 ; r_state.IDLE         ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.469      ;
-; 1.250 ; r_state.IDLE         ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.469      ;
-; 1.251 ; r_state.IDLE         ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.470      ;
-; 1.269 ; r_clock_count[2]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.488      ;
-; 1.275 ; r_clock_count[3]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.494      ;
-; 1.283 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.502      ;
-; 1.324 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.543      ;
-; 1.325 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.545      ;
-; 1.338 ; r_clock_count[7]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.557      ;
+; 0.389 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.624      ;
+; 0.407 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.626      ;
+; 0.589 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.808      ;
+; 0.594 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.813      ;
+; 0.601 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.836      ;
+; 0.616 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.851      ;
+; 0.628 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.863      ;
+; 0.630 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 0.865      ;
+; 0.657 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.230      ;
+; 0.671 ; r_state.IDLE         ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.434      ; 1.262      ;
+; 0.678 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.251      ;
+; 0.681 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.254      ;
+; 0.684 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.257      ;
+; 0.684 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.257      ;
+; 0.694 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.294      ;
+; 0.702 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.302      ;
+; 0.726 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 0.944      ;
+; 0.730 ; r_state.CLEANUP      ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 0.948      ;
+; 0.738 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 0.957      ;
+; 0.741 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.314      ;
+; 0.741 ; next[2]              ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.444      ; 1.342      ;
+; 0.766 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.339      ;
+; 0.767 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.340      ;
+; 0.768 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.341      ;
+; 0.790 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.025      ;
+; 0.803 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.023      ;
+; 0.811 ; r_clock_count[2]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.411      ;
+; 0.814 ; r_clock_count[8]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.414      ;
+; 0.865 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.084      ;
+; 0.868 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.434      ; 1.459      ;
+; 0.871 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.106      ;
+; 0.872 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.107      ;
+; 0.880 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.453      ;
+; 0.880 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.115      ;
+; 0.885 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.458      ;
+; 0.893 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.466      ;
+; 0.908 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.061      ; 1.126      ;
+; 0.910 ; r_clock_count[6]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.129      ;
+; 0.911 ; r_clock_count[3]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.511      ;
+; 0.915 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.150      ;
+; 0.942 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.416      ; 1.515      ;
+; 0.943 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.543      ;
+; 0.944 ; next[2]              ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.164      ;
+; 0.965 ; r_state.IDLE         ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.184      ;
+; 0.970 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.063      ; 1.190      ;
+; 0.972 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.191      ;
+; 0.975 ; r_state.IDLE         ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.194      ;
+; 0.977 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.196      ;
+; 0.981 ; r_state.IDLE         ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.200      ;
+; 0.984 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.203      ;
+; 0.986 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.221      ;
+; 0.987 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.206      ;
+; 0.990 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.225      ;
+; 0.993 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.212      ;
+; 1.000 ; r_clock_count[6]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.600      ;
+; 1.004 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.239      ;
+; 1.006 ; r_clock_count[7]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.606      ;
+; 1.027 ; r_clock_count[2]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.246      ;
+; 1.030 ; r_clock_count[8]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.249      ;
+; 1.037 ; O_TX_SERIAL~reg0     ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.077      ; 1.271      ;
+; 1.043 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.278      ;
+; 1.045 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; -0.303     ; 0.899      ;
+; 1.059 ; r_state.TX_START_BIT ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.294      ;
+; 1.060 ; r_clock_count[2]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.660      ;
+; 1.061 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.296      ;
+; 1.063 ; r_clock_count[8]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.663      ;
+; 1.069 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.295      ;
+; 1.073 ; r_clock_count[0]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.673      ;
+; 1.074 ; r_clock_count[1]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.674      ;
+; 1.079 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.314      ;
+; 1.089 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.308      ;
+; 1.111 ; r_clock_count[6]     ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.711      ;
+; 1.117 ; r_clock_count[2]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.717      ;
+; 1.118 ; r_clock_count[4]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.718      ;
+; 1.120 ; r_clock_count[8]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.720      ;
+; 1.121 ; r_clock_count[5]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.721      ;
+; 1.127 ; r_clock_count[3]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.346      ;
+; 1.128 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.095      ; 1.380      ;
+; 1.129 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.348      ;
+; 1.129 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; -0.303     ; 0.983      ;
+; 1.144 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.095      ; 1.396      ;
+; 1.150 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.369      ;
+; 1.150 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.385      ;
+; 1.160 ; r_clock_count[3]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.760      ;
+; 1.166 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.078      ; 1.401      ;
+; 1.172 ; r_clock_count[6]     ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.443      ; 1.772      ;
+; 1.173 ; r_state.IDLE         ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.392      ;
+; 1.182 ; r_state.IDLE         ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.401      ;
+; 1.182 ; r_state.IDLE         ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.401      ;
+; 1.184 ; r_state.IDLE         ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.403      ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -394,13 +394,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                        ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; 388.8 MHz ; 250.0 MHz       ; CLOCK      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 399.04 MHz ; 250.0 MHz       ; CLOCK      ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -409,7 +409,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; CLOCK ; -1.572 ; -30.963           ;
+; CLOCK ; -1.506 ; -27.267           ;
 +-------+--------+-------------------+
 
 
@@ -418,7 +418,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; CLOCK ; 0.311 ; 0.000             ;
+; CLOCK ; 0.298 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -445,110 +445,110 @@ No paths to report.
 
 +------------------------------------------------------------------------------------------------------------------------+
 ; Slow 1200mV 0C Model Setup: 'CLOCK'                                                                                    ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node        ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -1.572 ; r_clock_count[0] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.512      ;
-; -1.572 ; r_clock_count[0] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.512      ;
-; -1.572 ; r_clock_count[0] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.512      ;
-; -1.572 ; r_clock_count[0] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.512      ;
-; -1.572 ; r_clock_count[0] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.512      ;
-; -1.570 ; r_clock_count[1] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.510      ;
-; -1.570 ; r_clock_count[1] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.510      ;
-; -1.570 ; r_clock_count[1] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.510      ;
-; -1.570 ; r_clock_count[1] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.510      ;
-; -1.570 ; r_clock_count[1] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.510      ;
-; -1.493 ; r_clock_count[1] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.433      ;
-; -1.488 ; r_clock_count[0] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.428      ;
-; -1.487 ; r_clock_count[1] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.427      ;
-; -1.486 ; r_clock_count[1] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.426      ;
-; -1.482 ; r_clock_count[0] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.422      ;
-; -1.481 ; r_clock_count[0] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.421      ;
-; -1.448 ; r_clock_count[6] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.388      ;
-; -1.448 ; r_clock_count[6] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.388      ;
-; -1.448 ; r_clock_count[6] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.388      ;
-; -1.448 ; r_clock_count[6] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.388      ;
-; -1.448 ; r_clock_count[6] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.388      ;
-; -1.429 ; r_clock_count[1] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.369      ;
-; -1.428 ; r_clock_count[1] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.368      ;
-; -1.424 ; r_clock_count[3] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.424 ; r_clock_count[3] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.424 ; r_clock_count[3] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.424 ; r_clock_count[3] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.424 ; r_clock_count[3] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.424 ; r_clock_count[0] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.364      ;
-; -1.423 ; r_clock_count[0] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.363      ;
-; -1.416 ; r_clock_count[5] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.356      ;
-; -1.416 ; r_clock_count[5] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.356      ;
-; -1.416 ; r_clock_count[5] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.356      ;
-; -1.416 ; r_clock_count[5] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.356      ;
-; -1.416 ; r_clock_count[5] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.356      ;
-; -1.414 ; r_clock_count[1] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.354      ;
-; -1.414 ; r_clock_count[1] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.354      ;
-; -1.414 ; r_clock_count[1] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.354      ;
-; -1.414 ; r_clock_count[1] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.354      ;
-; -1.414 ; r_clock_count[1] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.354      ;
-; -1.409 ; r_clock_count[0] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.349      ;
-; -1.409 ; r_clock_count[0] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.349      ;
-; -1.409 ; r_clock_count[0] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.349      ;
-; -1.409 ; r_clock_count[0] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.349      ;
-; -1.409 ; r_clock_count[0] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.349      ;
-; -1.378 ; r_clock_count[6] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.318      ;
-; -1.372 ; r_clock_count[6] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.312      ;
-; -1.371 ; r_clock_count[6] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.311      ;
-; -1.354 ; r_clock_count[3] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.294      ;
-; -1.352 ; r_clock_count[4] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.292      ;
-; -1.352 ; r_clock_count[4] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.292      ;
-; -1.352 ; r_clock_count[4] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.292      ;
-; -1.352 ; r_clock_count[4] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.292      ;
-; -1.352 ; r_clock_count[4] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.292      ;
-; -1.348 ; r_clock_count[3] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.288      ;
-; -1.347 ; r_clock_count[3] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.287      ;
-; -1.346 ; r_clock_count[5] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.286      ;
-; -1.340 ; r_clock_count[5] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.280      ;
-; -1.339 ; r_clock_count[5] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.279      ;
-; -1.335 ; r_clock_count[1] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.275      ;
-; -1.330 ; r_clock_count[2] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.330 ; r_clock_count[2] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.330 ; r_clock_count[2] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.330 ; r_clock_count[2] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.330 ; r_clock_count[2] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.330 ; r_clock_count[0] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.270      ;
-; -1.314 ; r_clock_count[6] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.254      ;
-; -1.313 ; r_clock_count[6] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.253      ;
-; -1.304 ; r_clock_count[1] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.244      ;
-; -1.299 ; r_clock_count[6] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.299 ; r_clock_count[6] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.299 ; r_clock_count[6] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.299 ; r_clock_count[6] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.299 ; r_clock_count[6] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.299 ; r_clock_count[0] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.239      ;
-; -1.290 ; r_clock_count[3] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.230      ;
-; -1.289 ; r_clock_count[3] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.229      ;
-; -1.282 ; r_clock_count[4] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.222      ;
-; -1.282 ; r_clock_count[5] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.222      ;
-; -1.281 ; r_clock_count[5] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.221      ;
-; -1.276 ; r_clock_count[4] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.216      ;
-; -1.275 ; r_clock_count[3] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.275 ; r_clock_count[3] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.275 ; r_clock_count[3] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.275 ; r_clock_count[3] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.275 ; r_clock_count[3] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.275 ; r_clock_count[4] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
-; -1.272 ; r_clock_count[8] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.212      ;
-; -1.272 ; r_clock_count[8] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.212      ;
-; -1.272 ; r_clock_count[8] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.212      ;
-; -1.272 ; r_clock_count[8] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.212      ;
-; -1.272 ; r_clock_count[8] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.212      ;
-; -1.267 ; r_clock_count[5] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.207      ;
-; -1.267 ; r_clock_count[5] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.207      ;
-; -1.267 ; r_clock_count[5] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.207      ;
-; -1.267 ; r_clock_count[5] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.207      ;
-; -1.267 ; r_clock_count[5] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.207      ;
-; -1.260 ; r_clock_count[2] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.200      ;
-; -1.254 ; r_data_bits[0]   ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.194      ;
-; -1.254 ; r_clock_count[2] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.194      ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
++--------+----------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+------------------+--------------+-------------+--------------+------------+------------+
+; -1.506 ; r_clock_count[4]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.446      ;
+; -1.504 ; r_clock_count[4]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.444      ;
+; -1.501 ; r_clock_count[4]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.441      ;
+; -1.497 ; r_clock_count[4]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.437      ;
+; -1.495 ; r_clock_count[5]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.435      ;
+; -1.493 ; r_clock_count[5]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.433      ;
+; -1.490 ; r_clock_count[5]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.430      ;
+; -1.486 ; r_clock_count[5]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.426      ;
+; -1.473 ; r_clock_count[4]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.413      ;
+; -1.462 ; r_clock_count[5]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.402      ;
+; -1.379 ; r_clock_count[7]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.319      ;
+; -1.377 ; r_clock_count[7]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.317      ;
+; -1.374 ; r_clock_count[7]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.314      ;
+; -1.370 ; r_clock_count[7]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.310      ;
+; -1.369 ; r_clock_count[1]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.309      ;
+; -1.367 ; r_clock_count[1]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.307      ;
+; -1.365 ; r_clock_count[1]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.305      ;
+; -1.364 ; r_clock_count[1]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.304      ;
+; -1.362 ; r_clock_count[0]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.302      ;
+; -1.360 ; r_clock_count[1]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.300      ;
+; -1.360 ; r_clock_count[0]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.300      ;
+; -1.357 ; r_clock_count[0]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.297      ;
+; -1.353 ; r_clock_count[0]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.293      ;
+; -1.346 ; r_clock_count[7]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.286      ;
+; -1.339 ; r_clock_count[4]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.279      ;
+; -1.339 ; r_clock_count[4]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.279      ;
+; -1.339 ; r_clock_count[4]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.279      ;
+; -1.336 ; r_clock_count[1]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.276      ;
+; -1.329 ; r_clock_count[0]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.269      ;
+; -1.328 ; r_clock_count[5]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.268      ;
+; -1.328 ; r_clock_count[5]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.268      ;
+; -1.328 ; r_clock_count[5]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.268      ;
+; -1.323 ; r_state.TX_DATA_BITS ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.921      ;
+; -1.321 ; r_state.TX_DATA_BITS ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.919      ;
+; -1.318 ; r_state.TX_DATA_BITS ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.916      ;
+; -1.314 ; r_state.TX_DATA_BITS ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.912      ;
+; -1.290 ; r_state.TX_DATA_BITS ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.888      ;
+; -1.285 ; r_clock_count[4]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.225      ;
+; -1.275 ; r_clock_count[0]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.215      ;
+; -1.274 ; r_clock_count[5]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.214      ;
+; -1.261 ; r_clock_count[6]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.201      ;
+; -1.259 ; r_clock_count[6]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.199      ;
+; -1.259 ; r_clock_count[3]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.199      ;
+; -1.256 ; r_clock_count[6]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.196      ;
+; -1.252 ; r_clock_count[6]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.192      ;
+; -1.228 ; r_clock_count[6]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.168      ;
+; -1.224 ; r_clock_count[3]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.164      ;
+; -1.222 ; r_data_bits[0]       ; O_TX_SERIAL~reg0 ; CLOCK        ; CLOCK       ; 1.000        ; -0.050     ; 2.167      ;
+; -1.222 ; r_clock_count[3]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.162      ;
+; -1.219 ; r_clock_count[3]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.159      ;
+; -1.215 ; r_clock_count[3]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.155      ;
+; -1.212 ; r_clock_count[7]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.152      ;
+; -1.212 ; r_clock_count[7]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.152      ;
+; -1.212 ; r_clock_count[7]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.152      ;
+; -1.210 ; r_data_bits[1]       ; O_TX_SERIAL~reg0 ; CLOCK        ; CLOCK       ; 1.000        ; -0.050     ; 2.155      ;
+; -1.209 ; r_clock_count[8]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.149      ;
+; -1.207 ; r_clock_count[8]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.147      ;
+; -1.204 ; r_clock_count[8]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.144      ;
+; -1.202 ; r_clock_count[1]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.142      ;
+; -1.202 ; r_clock_count[1]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.142      ;
+; -1.202 ; r_clock_count[1]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.142      ;
+; -1.200 ; r_clock_count[8]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.140      ;
+; -1.195 ; r_clock_count[0]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.135      ;
+; -1.195 ; r_clock_count[0]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.135      ;
+; -1.195 ; r_clock_count[0]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.135      ;
+; -1.191 ; r_clock_count[3]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.131      ;
+; -1.187 ; r_clock_count[4]     ; r_data_bits[0]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.430      ;
+; -1.187 ; r_clock_count[4]     ; r_data_bits[1]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.430      ;
+; -1.187 ; r_clock_count[4]     ; r_data_bits[2]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.430      ;
+; -1.187 ; r_clock_count[4]     ; r_data_bits[3]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.430      ;
+; -1.187 ; r_clock_count[4]     ; r_data_bits[6]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.430      ;
+; -1.176 ; r_clock_count[8]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.116      ;
+; -1.176 ; r_clock_count[5]     ; r_data_bits[0]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.419      ;
+; -1.176 ; r_clock_count[5]     ; r_data_bits[1]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.419      ;
+; -1.176 ; r_clock_count[5]     ; r_data_bits[2]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.419      ;
+; -1.176 ; r_clock_count[5]     ; r_data_bits[3]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.419      ;
+; -1.176 ; r_clock_count[5]     ; r_data_bits[6]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.419      ;
+; -1.172 ; r_clock_count[2]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.112      ;
+; -1.158 ; r_clock_count[7]     ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.098      ;
+; -1.156 ; r_bit_index[0]       ; O_TX_SERIAL~reg0 ; CLOCK        ; CLOCK       ; 1.000        ; -0.076     ; 2.075      ;
+; -1.135 ; r_clock_count[2]     ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.075      ;
+; -1.133 ; r_clock_count[2]     ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.073      ;
+; -1.130 ; r_clock_count[2]     ; r_clock_count[5] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.070      ;
+; -1.126 ; r_clock_count[2]     ; r_clock_count[1] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.066      ;
+; -1.103 ; r_state.TX_DATA_BITS ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.701      ;
+; -1.103 ; r_state.TX_DATA_BITS ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.701      ;
+; -1.102 ; r_clock_count[2]     ; r_clock_count[7] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.042      ;
+; -1.102 ; r_state.TX_DATA_BITS ; r_clock_count[8] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.700      ;
+; -1.098 ; r_state.TX_DATA_BITS ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.696      ;
+; -1.094 ; r_clock_count[6]     ; r_clock_count[0] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.034      ;
+; -1.094 ; r_clock_count[6]     ; r_clock_count[2] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.034      ;
+; -1.094 ; r_clock_count[6]     ; r_clock_count[3] ; CLOCK        ; CLOCK       ; 1.000        ; -0.055     ; 2.034      ;
+; -1.060 ; r_clock_count[7]     ; r_data_bits[0]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.303      ;
+; -1.060 ; r_clock_count[7]     ; r_data_bits[1]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.303      ;
+; -1.060 ; r_clock_count[7]     ; r_data_bits[2]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.303      ;
+; -1.060 ; r_clock_count[7]     ; r_data_bits[3]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.303      ;
+; -1.060 ; r_clock_count[7]     ; r_data_bits[6]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.248      ; 2.303      ;
+; -1.059 ; r_state.TX_START_BIT ; r_clock_count[4] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.657      ;
+; -1.058 ; r_clock_count[4]     ; r_bit_index[1]   ; CLOCK        ; CLOCK       ; 1.000        ; 0.273      ; 2.326      ;
+; -1.057 ; r_state.TX_START_BIT ; r_clock_count[6] ; CLOCK        ; CLOCK       ; 1.000        ; -0.397     ; 1.655      ;
++--------+----------------------+------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -556,106 +556,106 @@ No paths to report.
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; 0.311 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.511      ;
-; 0.311 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.511      ;
-; 0.312 ; next[2]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; next[1]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; next[0]              ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.298 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.511      ;
+; 0.298 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.511      ;
+; 0.298 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.511      ;
+; 0.298 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.511      ;
+; 0.298 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.511      ;
+; 0.311 ; next[2]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.511      ;
+; 0.311 ; next[1]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.511      ;
+; 0.311 ; next[0]              ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.511      ;
 ; 0.312 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.312 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
-; 0.353 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.552      ;
-; 0.360 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.559      ;
-; 0.360 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.559      ;
-; 0.361 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.560      ;
-; 0.369 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.568      ;
-; 0.370 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.569      ;
-; 0.446 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.645      ;
-; 0.446 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.645      ;
-; 0.447 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.646      ;
-; 0.448 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.647      ;
-; 0.479 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.679      ;
-; 0.521 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.720      ;
-; 0.532 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.731      ;
-; 0.539 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.738      ;
-; 0.541 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.740      ;
-; 0.548 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.748      ;
-; 0.558 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.757      ;
-; 0.575 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.774      ;
-; 0.589 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.789      ;
-; 0.592 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.791      ;
-; 0.633 ; r_bit_index[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.832      ;
-; 0.638 ; r_state.TX_STOP_BIT  ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.837      ;
-; 0.670 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.869      ;
-; 0.672 ; r_state.CLEANUP      ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.871      ;
-; 0.675 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.874      ;
-; 0.715 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.914      ;
-; 0.727 ; r_state.TX_STOP_BIT  ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.926      ;
-; 0.744 ; r_bit_index[0]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.943      ;
-; 0.753 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.952      ;
-; 0.757 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.957      ;
-; 0.772 ; r_state.TX_STOP_BIT  ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.972      ;
-; 0.779 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.979      ;
-; 0.810 ; r_bit_index[2]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.009      ;
-; 0.818 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.017      ;
-; 0.818 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.017      ;
-; 0.819 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.018      ;
-; 0.819 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.018      ;
-; 0.822 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.021      ;
-; 0.829 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.028      ;
-; 0.844 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.043      ;
-; 0.854 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.053      ;
-; 0.877 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.076      ;
-; 0.892 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.091      ;
-; 0.913 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.112      ;
-; 0.925 ; r_clock_count[7]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.124      ;
-; 0.929 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.128      ;
-; 0.931 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.130      ;
-; 0.938 ; r_bit_index[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.137      ;
-; 0.945 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.144      ;
-; 0.945 ; r_clock_count[8]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.144      ;
-; 0.945 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.144      ;
-; 0.976 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.175      ;
-; 0.976 ; r_state.CLEANUP      ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.175      ;
-; 0.976 ; r_state.CLEANUP      ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.175      ;
-; 0.978 ; r_state.CLEANUP      ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.177      ;
-; 0.979 ; r_state.CLEANUP      ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.178      ;
-; 0.997 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.196      ;
-; 1.015 ; r_clock_count[2]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.214      ;
-; 1.016 ; r_clock_count[4]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.215      ;
-; 1.017 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.216      ;
-; 1.029 ; r_state.TX_DATA_BITS ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 1.229      ;
-; 1.037 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.236      ;
-; 1.044 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.243      ;
-; 1.051 ; r_clock_count[1]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.250      ;
-; 1.066 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.265      ;
-; 1.074 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.273      ;
-; 1.076 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.275      ;
-; 1.076 ; r_state.CLEANUP      ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.275      ;
-; 1.076 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.275      ;
-; 1.076 ; r_state.TX_DATA_BITS ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.275      ;
-; 1.076 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.275      ;
-; 1.086 ; r_clock_count[5]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.285      ;
-; 1.093 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.292      ;
-; 1.096 ; r_clock_count[5]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.295      ;
-; 1.107 ; r_clock_count[3]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.306      ;
-; 1.115 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.314      ;
-; 1.115 ; r_state.IDLE         ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.314      ;
-; 1.115 ; r_state.IDLE         ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.314      ;
-; 1.117 ; r_state.IDLE         ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.316      ;
-; 1.118 ; r_state.IDLE         ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.317      ;
-; 1.121 ; r_data_bits[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.320      ;
-; 1.123 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 1.323      ;
-; 1.131 ; r_state.TX_START_BIT ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.330      ;
-; 1.145 ; r_state.TX_STOP_BIT  ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.344      ;
-; 1.165 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.364      ;
-; 1.165 ; r_clock_count[2]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.364      ;
-; 1.173 ; r_clock_count[3]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.372      ;
-; 1.209 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.408      ;
-; 1.213 ; r_state.IDLE         ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.412      ;
-; 1.215 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.414      ;
+; 0.312 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.344 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.557      ;
+; 0.357 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.557      ;
+; 0.524 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.724      ;
+; 0.527 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.727      ;
+; 0.539 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.752      ;
+; 0.556 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.769      ;
+; 0.560 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.773      ;
+; 0.567 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.780      ;
+; 0.587 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.103      ;
+; 0.605 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.121      ;
+; 0.607 ; r_state.IDLE         ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.390      ; 1.141      ;
+; 0.607 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.123      ;
+; 0.610 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.126      ;
+; 0.610 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.126      ;
+; 0.627 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.168      ;
+; 0.631 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.172      ;
+; 0.656 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.172      ;
+; 0.662 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.861      ;
+; 0.666 ; r_state.CLEANUP      ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.865      ;
+; 0.674 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.873      ;
+; 0.677 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.193      ;
+; 0.678 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.194      ;
+; 0.679 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.195      ;
+; 0.681 ; next[2]              ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.398      ; 1.223      ;
+; 0.700 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.913      ;
+; 0.730 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 0.930      ;
+; 0.734 ; r_clock_count[2]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.275      ;
+; 0.751 ; r_clock_count[8]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.292      ;
+; 0.781 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.994      ;
+; 0.783 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 0.982      ;
+; 0.784 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 0.997      ;
+; 0.792 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.005      ;
+; 0.795 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.311      ;
+; 0.796 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.390      ; 1.330      ;
+; 0.801 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.317      ;
+; 0.807 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.323      ;
+; 0.820 ; r_clock_count[6]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.019      ;
+; 0.822 ; r_clock_count[3]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.363      ;
+; 0.824 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.037      ;
+; 0.828 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.027      ;
+; 0.835 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.372      ; 1.351      ;
+; 0.858 ; r_state.IDLE         ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.057      ;
+; 0.863 ; next[2]              ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 1.063      ;
+; 0.864 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.063      ;
+; 0.864 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.405      ;
+; 0.868 ; r_state.IDLE         ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.067      ;
+; 0.873 ; r_state.IDLE         ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.072      ;
+; 0.883 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.082      ;
+; 0.884 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.097      ;
+; 0.889 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.088      ;
+; 0.893 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.056      ; 1.093      ;
+; 0.893 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.092      ;
+; 0.895 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.108      ;
+; 0.898 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.097      ;
+; 0.899 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.112      ;
+; 0.903 ; r_clock_count[6]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.444      ;
+; 0.915 ; r_clock_count[7]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.456      ;
+; 0.923 ; r_clock_count[2]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.122      ;
+; 0.936 ; O_TX_SERIAL~reg0     ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.149      ;
+; 0.940 ; r_clock_count[8]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.139      ;
+; 0.946 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.159      ;
+; 0.951 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; -0.273     ; 0.822      ;
+; 0.953 ; r_state.TX_START_BIT ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.166      ;
+; 0.955 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.168      ;
+; 0.967 ; r_clock_count[2]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.508      ;
+; 0.969 ; r_clock_count[0]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.510      ;
+; 0.970 ; r_clock_count[1]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.511      ;
+; 0.970 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.183      ;
+; 0.978 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.062      ; 1.184      ;
+; 0.979 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.178      ;
+; 0.984 ; r_clock_count[8]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.525      ;
+; 0.992 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.087      ; 1.223      ;
+; 1.006 ; r_clock_count[2]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.547      ;
+; 1.011 ; r_clock_count[3]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.210      ;
+; 1.013 ; r_clock_count[4]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.554      ;
+; 1.015 ; r_clock_count[6]     ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.556      ;
+; 1.018 ; r_clock_count[5]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.559      ;
+; 1.023 ; r_clock_count[8]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.564      ;
+; 1.027 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; -0.273     ; 0.898      ;
+; 1.036 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.235      ;
+; 1.047 ; r_state.IDLE         ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.246      ;
+; 1.047 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.260      ;
+; 1.054 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.253      ;
+; 1.054 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.087      ; 1.285      ;
+; 1.055 ; r_state.IDLE         ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.254      ;
+; 1.055 ; r_clock_count[3]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.397      ; 1.596      ;
+; 1.056 ; r_state.IDLE         ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.255      ;
+; 1.057 ; r_state.IDLE         ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.256      ;
+; 1.057 ; r_state.IDLE         ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.055      ; 1.256      ;
+; 1.058 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.069      ; 1.271      ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -670,7 +670,7 @@ No synchronizer chains to report.
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; CLOCK ; -0.599 ; -10.672           ;
+; CLOCK ; -0.574 ; -8.264            ;
 +-------+--------+-------------------+
 
 
@@ -679,7 +679,7 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; CLOCK ; 0.186 ; 0.000             ;
+; CLOCK ; 0.179 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -700,116 +700,116 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; CLOCK ; -3.000 ; -31.512                         ;
+; CLOCK ; -3.000 ; -31.824                         ;
 +-------+--------+---------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'CLOCK'                                                                                    ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node        ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
-; -0.599 ; r_clock_count[1] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.548      ;
-; -0.599 ; r_clock_count[1] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.548      ;
-; -0.599 ; r_clock_count[1] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.548      ;
-; -0.599 ; r_clock_count[1] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.548      ;
-; -0.599 ; r_clock_count[1] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.548      ;
-; -0.595 ; r_clock_count[0] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.544      ;
-; -0.595 ; r_clock_count[0] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.544      ;
-; -0.595 ; r_clock_count[0] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.544      ;
-; -0.595 ; r_clock_count[0] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.544      ;
-; -0.595 ; r_clock_count[0] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.544      ;
-; -0.561 ; r_clock_count[1] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.511      ;
-; -0.560 ; r_clock_count[1] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.510      ;
-; -0.560 ; r_clock_count[1] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.510      ;
-; -0.557 ; r_clock_count[0] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.507      ;
-; -0.556 ; r_clock_count[0] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.506      ;
-; -0.556 ; r_clock_count[0] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.506      ;
-; -0.540 ; r_clock_count[6] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.489      ;
-; -0.540 ; r_clock_count[6] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.489      ;
-; -0.540 ; r_clock_count[6] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.489      ;
-; -0.540 ; r_clock_count[6] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.489      ;
-; -0.540 ; r_clock_count[6] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.489      ;
-; -0.534 ; r_clock_count[1] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.483      ;
-; -0.530 ; r_clock_count[0] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.479      ;
-; -0.518 ; r_clock_count[1] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.468      ;
-; -0.516 ; r_clock_count[5] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.465      ;
-; -0.516 ; r_clock_count[5] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.465      ;
-; -0.516 ; r_clock_count[5] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.465      ;
-; -0.516 ; r_clock_count[5] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.465      ;
-; -0.516 ; r_clock_count[5] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.465      ;
-; -0.514 ; r_clock_count[0] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.464      ;
-; -0.502 ; r_clock_count[6] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.452      ;
-; -0.501 ; r_clock_count[1] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[1] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[1] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[1] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[1] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[6] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.501 ; r_clock_count[6] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.451      ;
-; -0.499 ; r_clock_count[3] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.448      ;
-; -0.499 ; r_clock_count[3] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.448      ;
-; -0.499 ; r_clock_count[3] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.448      ;
-; -0.499 ; r_clock_count[3] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.448      ;
-; -0.499 ; r_clock_count[3] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.448      ;
-; -0.497 ; r_clock_count[0] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.447      ;
-; -0.497 ; r_clock_count[0] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.447      ;
-; -0.497 ; r_clock_count[0] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.447      ;
-; -0.497 ; r_clock_count[0] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.447      ;
-; -0.497 ; r_clock_count[0] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.447      ;
-; -0.478 ; r_clock_count[5] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.428      ;
-; -0.477 ; r_clock_count[5] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.427      ;
-; -0.477 ; r_clock_count[5] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.427      ;
-; -0.475 ; r_clock_count[6] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.424      ;
-; -0.468 ; r_clock_count[4] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.417      ;
-; -0.468 ; r_clock_count[4] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.417      ;
-; -0.468 ; r_clock_count[4] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.417      ;
-; -0.468 ; r_clock_count[4] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.417      ;
-; -0.468 ; r_clock_count[4] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.417      ;
-; -0.461 ; r_clock_count[3] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.411      ;
-; -0.460 ; r_clock_count[3] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.410      ;
-; -0.460 ; r_clock_count[3] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.410      ;
-; -0.459 ; r_clock_count[6] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.409      ;
-; -0.451 ; r_clock_count[1] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.401      ;
-; -0.451 ; r_clock_count[5] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.400      ;
-; -0.447 ; r_clock_count[0] ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.397      ;
-; -0.446 ; r_clock_count[2] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.395      ;
-; -0.446 ; r_clock_count[2] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.395      ;
-; -0.446 ; r_clock_count[2] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.395      ;
-; -0.446 ; r_clock_count[2] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.395      ;
-; -0.446 ; r_clock_count[2] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.395      ;
-; -0.442 ; r_clock_count[6] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.392      ;
-; -0.442 ; r_clock_count[6] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.392      ;
-; -0.442 ; r_clock_count[6] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.392      ;
-; -0.442 ; r_clock_count[6] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.392      ;
-; -0.442 ; r_clock_count[6] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.392      ;
-; -0.435 ; r_clock_count[8] ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.384      ;
-; -0.435 ; r_clock_count[8] ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.384      ;
-; -0.435 ; r_clock_count[8] ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.384      ;
-; -0.435 ; r_clock_count[8] ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.384      ;
-; -0.435 ; r_clock_count[8] ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.384      ;
-; -0.435 ; r_clock_count[5] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.385      ;
-; -0.434 ; r_clock_count[3] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.383      ;
-; -0.433 ; r_clock_count[1] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.383      ;
-; -0.430 ; r_clock_count[4] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.380      ;
-; -0.429 ; r_clock_count[4] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.379      ;
-; -0.429 ; r_clock_count[4] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.379      ;
-; -0.429 ; r_clock_count[0] ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.379      ;
-; -0.418 ; r_clock_count[3] ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.418 ; r_clock_count[5] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.418 ; r_clock_count[5] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.418 ; r_clock_count[5] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.418 ; r_clock_count[5] ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.418 ; r_clock_count[5] ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.368      ;
-; -0.417 ; r_data_bits[0]   ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.036     ; 1.368      ;
-; -0.408 ; r_clock_count[2] ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.358      ;
-; -0.407 ; r_clock_count[2] ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.357      ;
-; -0.407 ; r_clock_count[2] ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.357      ;
-; -0.403 ; r_clock_count[4] ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; -0.038     ; 1.352      ;
-; -0.401 ; r_clock_count[3] ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.351      ;
-; -0.401 ; r_clock_count[3] ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.351      ;
-; -0.401 ; r_clock_count[3] ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.351      ;
-+--------+------------------+----------------------+--------------+-------------+--------------+------------+------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'CLOCK'                                                                                        ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; -0.574 ; r_clock_count[4]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.524      ;
+; -0.573 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.523      ;
+; -0.571 ; r_clock_count[5]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.521      ;
+; -0.570 ; r_clock_count[5]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.520      ;
+; -0.569 ; r_clock_count[4]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.519      ;
+; -0.566 ; r_clock_count[4]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.516      ;
+; -0.566 ; r_clock_count[5]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.516      ;
+; -0.563 ; r_clock_count[5]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.513      ;
+; -0.543 ; r_clock_count[4]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.493      ;
+; -0.540 ; r_clock_count[5]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.490      ;
+; -0.509 ; r_clock_count[1]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.459      ;
+; -0.490 ; r_clock_count[1]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.440      ;
+; -0.489 ; r_clock_count[1]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.439      ;
+; -0.486 ; r_clock_count[7]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.436      ;
+; -0.485 ; r_clock_count[7]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.435      ;
+; -0.485 ; r_clock_count[1]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.435      ;
+; -0.482 ; r_clock_count[1]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.432      ;
+; -0.482 ; r_clock_count[0]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.432      ;
+; -0.481 ; r_clock_count[7]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.431      ;
+; -0.481 ; r_clock_count[0]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.431      ;
+; -0.478 ; r_clock_count[7]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.428      ;
+; -0.477 ; r_clock_count[0]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.427      ;
+; -0.474 ; r_clock_count[0]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.424      ;
+; -0.459 ; r_clock_count[1]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.409      ;
+; -0.455 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.405      ;
+; -0.451 ; r_clock_count[0]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.401      ;
+; -0.446 ; r_clock_count[4]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.396      ;
+; -0.446 ; r_clock_count[4]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.396      ;
+; -0.446 ; r_clock_count[4]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.396      ;
+; -0.446 ; r_clock_count[0]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.396      ;
+; -0.443 ; r_clock_count[5]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.393      ;
+; -0.443 ; r_clock_count[5]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.393      ;
+; -0.443 ; r_clock_count[5]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.393      ;
+; -0.440 ; r_clock_count[3]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.390      ;
+; -0.436 ; r_state.TX_DATA_BITS ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.182      ;
+; -0.435 ; r_state.TX_DATA_BITS ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.181      ;
+; -0.431 ; r_state.TX_DATA_BITS ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.177      ;
+; -0.429 ; r_clock_count[4]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.379      ;
+; -0.428 ; r_state.TX_DATA_BITS ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.174      ;
+; -0.426 ; r_clock_count[5]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.376      ;
+; -0.421 ; r_clock_count[6]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.371      ;
+; -0.420 ; r_clock_count[6]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.370      ;
+; -0.416 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.366      ;
+; -0.413 ; r_clock_count[6]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.363      ;
+; -0.405 ; r_state.TX_DATA_BITS ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.151      ;
+; -0.401 ; r_clock_count[8]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.351      ;
+; -0.400 ; r_clock_count[8]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.350      ;
+; -0.396 ; r_clock_count[8]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.346      ;
+; -0.393 ; r_clock_count[8]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.343      ;
+; -0.391 ; r_data_bits[0]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.035     ; 1.343      ;
+; -0.390 ; r_clock_count[6]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.340      ;
+; -0.383 ; r_clock_count[3]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.333      ;
+; -0.382 ; r_clock_count[3]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.332      ;
+; -0.382 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.035     ; 1.334      ;
+; -0.380 ; r_clock_count[2]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.330      ;
+; -0.378 ; r_clock_count[3]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.328      ;
+; -0.375 ; r_clock_count[3]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.325      ;
+; -0.370 ; r_clock_count[8]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.320      ;
+; -0.366 ; r_clock_count[4]     ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.499      ;
+; -0.366 ; r_clock_count[4]     ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.499      ;
+; -0.366 ; r_clock_count[4]     ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.499      ;
+; -0.366 ; r_clock_count[4]     ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.499      ;
+; -0.366 ; r_clock_count[4]     ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.499      ;
+; -0.363 ; r_clock_count[5]     ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.496      ;
+; -0.363 ; r_clock_count[5]     ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.496      ;
+; -0.363 ; r_clock_count[5]     ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.496      ;
+; -0.363 ; r_clock_count[5]     ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.496      ;
+; -0.363 ; r_clock_count[5]     ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.496      ;
+; -0.362 ; r_clock_count[1]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.312      ;
+; -0.362 ; r_clock_count[1]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.312      ;
+; -0.362 ; r_clock_count[1]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.312      ;
+; -0.358 ; r_clock_count[7]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.308      ;
+; -0.358 ; r_clock_count[7]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.308      ;
+; -0.358 ; r_clock_count[7]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.308      ;
+; -0.354 ; r_clock_count[0]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.304      ;
+; -0.354 ; r_clock_count[0]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.304      ;
+; -0.354 ; r_clock_count[0]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.304      ;
+; -0.352 ; r_clock_count[3]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.302      ;
+; -0.341 ; r_clock_count[7]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.291      ;
+; -0.341 ; r_bit_index[0]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 1.000        ; -0.049     ; 1.279      ;
+; -0.335 ; r_clock_count[2]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.285      ;
+; -0.334 ; r_clock_count[2]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.284      ;
+; -0.330 ; r_clock_count[2]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.280      ;
+; -0.327 ; r_clock_count[2]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.277      ;
+; -0.304 ; r_clock_count[2]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.254      ;
+; -0.299 ; r_clock_count[4]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.446      ;
+; -0.296 ; r_clock_count[5]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.443      ;
+; -0.293 ; r_clock_count[6]     ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.243      ;
+; -0.293 ; r_clock_count[6]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.243      ;
+; -0.293 ; r_clock_count[6]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.037     ; 1.243      ;
+; -0.291 ; r_state.TX_DATA_BITS ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.037      ;
+; -0.289 ; r_state.TX_DATA_BITS ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.035      ;
+; -0.287 ; r_clock_count[4]     ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.434      ;
+; -0.286 ; r_clock_count[4]     ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.433      ;
+; -0.285 ; r_state.TX_DATA_BITS ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.031      ;
+; -0.284 ; r_state.TX_DATA_BITS ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 1.000        ; -0.241     ; 1.030      ;
+; -0.284 ; r_clock_count[5]     ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.431      ;
+; -0.283 ; r_clock_count[5]     ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.160      ; 1.430      ;
+; -0.282 ; r_clock_count[1]     ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.415      ;
+; -0.282 ; r_clock_count[1]     ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 1.000        ; 0.146      ; 1.415      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -817,106 +817,106 @@ No paths to report.
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.179 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.307      ;
+; 0.179 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.307      ;
+; 0.179 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.307      ;
+; 0.179 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.307      ;
+; 0.179 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.307      ;
+; 0.186 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; next[2]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; next[1]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; next[0]              ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
-; 0.186 ; r_clock_count[7]     ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
-; 0.186 ; r_state.TX_DATA_BITS ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.307      ;
-; 0.187 ; r_state.TX_STOP_BIT  ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; r_state.TX_START_BIT ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; r_bit_index[0]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; r_bit_index[1]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; r_state.IDLE         ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.307      ;
-; 0.212 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.333      ;
-; 0.213 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.334      ;
-; 0.213 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.334      ;
-; 0.214 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.335      ;
-; 0.217 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.338      ;
-; 0.217 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.338      ;
-; 0.268 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.389      ;
-; 0.269 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.390      ;
-; 0.271 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.392      ;
-; 0.272 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.393      ;
-; 0.277 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.398      ;
-; 0.313 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.434      ;
-; 0.316 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.437      ;
-; 0.325 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.446      ;
-; 0.325 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.446      ;
-; 0.332 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.452      ;
-; 0.334 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.455      ;
-; 0.345 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.465      ;
-; 0.352 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.472      ;
-; 0.354 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.475      ;
-; 0.367 ; r_state.TX_STOP_BIT  ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.487      ;
-; 0.384 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.504      ;
+; 0.210 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.338      ;
+; 0.215 ; next[0]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.336      ;
+; 0.316 ; next[1]              ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.437      ;
+; 0.322 ; next[0]              ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.443      ;
+; 0.327 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.455      ;
+; 0.334 ; r_state.TX_STOP_BIT  ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.462      ;
+; 0.339 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.467      ;
+; 0.339 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.467      ;
+; 0.353 ; next[2]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.665      ;
+; 0.365 ; r_state.IDLE         ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.236      ; 0.685      ;
+; 0.366 ; next[2]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.678      ;
+; 0.369 ; next[2]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.681      ;
+; 0.370 ; next[2]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.682      ;
+; 0.370 ; next[2]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.682      ;
+; 0.371 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.696      ;
+; 0.382 ; r_state.CLEANUP      ; next[1]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.502      ;
 ; 0.385 ; r_state.CLEANUP      ; next[0]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.505      ;
-; 0.389 ; r_bit_index[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.509      ;
-; 0.391 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.512      ;
-; 0.417 ; r_state.TX_DATA_BITS ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.538      ;
-; 0.424 ; r_state.TX_STOP_BIT  ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.544      ;
-; 0.425 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.546      ;
-; 0.435 ; r_state.TX_STOP_BIT  ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.556      ;
-; 0.441 ; r_state.TX_DATA_BITS ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.562      ;
-; 0.452 ; r_bit_index[0]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.572      ;
-; 0.458 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.578      ;
-; 0.479 ; r_bit_index[2]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.599      ;
-; 0.479 ; r_bit_index[2]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.599      ;
-; 0.485 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.606      ;
-; 0.487 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.607      ;
-; 0.487 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.607      ;
-; 0.488 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.608      ;
-; 0.488 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.608      ;
-; 0.492 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.612      ;
-; 0.505 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.625      ;
-; 0.511 ; r_state.TX_START_BIT ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.035      ; 0.630      ;
-; 0.523 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.644      ;
-; 0.530 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.650      ;
-; 0.531 ; r_clock_count[7]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.652      ;
-; 0.535 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.656      ;
-; 0.547 ; r_clock_count[8]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.668      ;
-; 0.557 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.677      ;
-; 0.557 ; r_bit_index[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.677      ;
-; 0.561 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.681      ;
-; 0.561 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.681      ;
-; 0.577 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.698      ;
-; 0.578 ; r_state.CLEANUP      ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.699      ;
-; 0.579 ; r_state.CLEANUP      ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.700      ;
-; 0.579 ; r_state.CLEANUP      ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.700      ;
-; 0.580 ; r_state.CLEANUP      ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.701      ;
-; 0.582 ; r_state.TX_DATA_BITS ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.038      ; 0.704      ;
-; 0.590 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.711      ;
-; 0.590 ; r_clock_count[4]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.711      ;
-; 0.593 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.035      ; 0.712      ;
-; 0.596 ; r_clock_count[1]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.717      ;
-; 0.597 ; r_clock_count[2]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.718      ;
-; 0.600 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.720      ;
-; 0.605 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.726      ;
-; 0.610 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.731      ;
-; 0.614 ; r_clock_count[5]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.735      ;
-; 0.617 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.738      ;
-; 0.630 ; r_state.TX_DATA_BITS ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.751      ;
-; 0.630 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.750      ;
-; 0.636 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.757      ;
-; 0.636 ; r_data_bits[2]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.757      ;
-; 0.636 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.757      ;
-; 0.637 ; r_state.CLEANUP      ; r_clock_count[7]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.758      ;
-; 0.638 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.759      ;
-; 0.638 ; r_clock_count[5]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.759      ;
-; 0.652 ; r_clock_count[3]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.773      ;
-; 0.654 ; r_state.TX_START_BIT ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.035      ; 0.773      ;
-; 0.657 ; r_state.TX_STOP_BIT  ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.777      ;
-; 0.659 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.780      ;
-; 0.664 ; r_clock_count[2]     ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.785      ;
-; 0.666 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.786      ;
-; 0.667 ; r_state.IDLE         ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.787      ;
-; 0.668 ; r_clock_count[3]     ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.789      ;
-; 0.668 ; r_state.IDLE         ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.788      ;
-; 0.668 ; r_state.IDLE         ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.788      ;
-; 0.669 ; r_state.IDLE         ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.789      ;
-; 0.685 ; r_clock_count[6]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.805      ;
-; 0.694 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.815      ;
-; 0.696 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.816      ;
-; 0.705 ; r_clock_count[7]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.826      ;
+; 0.389 ; r_state.CLEANUP      ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.510      ;
+; 0.393 ; r_state.IDLE         ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.718      ;
+; 0.398 ; next[1]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.710      ;
+; 0.407 ; next[2]              ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.242      ; 0.733      ;
+; 0.410 ; next[1]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.722      ;
+; 0.415 ; next[1]              ; r_data_bits[6]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.727      ;
+; 0.416 ; next[1]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.728      ;
+; 0.418 ; r_bit_index[0]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.546      ;
+; 0.422 ; r_state.IDLE         ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.543      ;
+; 0.431 ; r_clock_count[8]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.756      ;
+; 0.438 ; r_clock_count[2]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.763      ;
+; 0.458 ; r_TX_DONE            ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.579      ;
+; 0.458 ; next[0]              ; r_data_bits[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.770      ;
+; 0.459 ; next[0]              ; r_data_bits[3]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.771      ;
+; 0.460 ; r_state.CLEANUP      ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.236      ; 0.780      ;
+; 0.467 ; r_bit_index[2]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.595      ;
+; 0.469 ; r_bit_index[1]       ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.597      ;
+; 0.472 ; r_state.TX_DATA_BITS ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.600      ;
+; 0.482 ; next[0]              ; r_data_bits[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.794      ;
+; 0.484 ; r_clock_count[6]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.605      ;
+; 0.484 ; r_state.CLEANUP      ; next[2]              ; CLOCK        ; CLOCK       ; 0.000        ; 0.036      ; 0.604      ;
+; 0.490 ; r_clock_count[3]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.815      ;
+; 0.492 ; r_bit_index[0]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.620      ;
+; 0.495 ; next[2]              ; r_state.IDLE         ; CLOCK        ; CLOCK       ; 0.000        ; 0.038      ; 0.617      ;
+; 0.504 ; r_clock_count[6]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.829      ;
+; 0.506 ; r_state.CLEANUP      ; r_TX_DONE            ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.627      ;
+; 0.508 ; next[0]              ; r_data_bits[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.228      ; 0.820      ;
+; 0.522 ; r_state.CLEANUP      ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.643      ;
+; 0.524 ; r_state.CLEANUP      ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.645      ;
+; 0.526 ; r_state.CLEANUP      ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.647      ;
+; 0.527 ; r_state.CLEANUP      ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.648      ;
+; 0.528 ; r_state.IDLE         ; r_clock_count[2]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.649      ;
+; 0.530 ; r_state.IDLE         ; r_clock_count[0]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.651      ;
+; 0.531 ; r_bit_index[0]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.659      ;
+; 0.532 ; r_state.IDLE         ; r_clock_count[3]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.653      ;
+; 0.533 ; r_state.IDLE         ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.654      ;
+; 0.534 ; r_bit_index[1]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.662      ;
+; 0.537 ; r_clock_count[7]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.862      ;
+; 0.541 ; r_clock_count[6]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.866      ;
+; 0.542 ; r_bit_index[0]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.670      ;
+; 0.544 ; r_clock_count[8]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.665      ;
+; 0.549 ; r_state.TX_START_BIT ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.677      ;
+; 0.551 ; r_state.TX_STOP_BIT  ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; -0.160     ; 0.475      ;
+; 0.551 ; r_clock_count[2]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.672      ;
+; 0.556 ; O_TX_SERIAL~reg0     ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.684      ;
+; 0.561 ; r_state.TX_DATA_BITS ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.039      ; 0.684      ;
+; 0.564 ; r_clock_count[8]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.889      ;
+; 0.571 ; r_clock_count[2]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.896      ;
+; 0.573 ; r_state.TX_START_BIT ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.701      ;
+; 0.573 ; r_bit_index[1]       ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.701      ;
+; 0.575 ; r_clock_count[0]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.900      ;
+; 0.576 ; r_clock_count[1]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.901      ;
+; 0.584 ; r_bit_index[1]       ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.712      ;
+; 0.585 ; r_clock_count[6]     ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.706      ;
+; 0.588 ; r_clock_count[6]     ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.913      ;
+; 0.591 ; r_clock_count[4]     ; r_clock_count[4]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.712      ;
+; 0.598 ; r_data_bits[1]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.053      ; 0.735      ;
+; 0.600 ; r_clock_count[6]     ; r_clock_count[6]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.721      ;
+; 0.600 ; r_state.TX_STOP_BIT  ; r_clock_count[8]     ; CLOCK        ; CLOCK       ; 0.000        ; -0.160     ; 0.524      ;
+; 0.601 ; r_clock_count[4]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.926      ;
+; 0.601 ; r_bit_index[2]       ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.729      ;
+; 0.601 ; r_clock_count[8]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.926      ;
+; 0.602 ; r_clock_count[5]     ; r_state.TX_STOP_BIT  ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.927      ;
+; 0.603 ; r_clock_count[3]     ; r_state.CLEANUP      ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.724      ;
+; 0.607 ; r_data_bits[6]       ; O_TX_SERIAL~reg0     ; CLOCK        ; CLOCK       ; 0.000        ; 0.053      ; 0.744      ;
+; 0.608 ; r_clock_count[2]     ; r_bit_index[0]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.933      ;
+; 0.616 ; r_clock_count[5]     ; r_clock_count[5]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.737      ;
+; 0.618 ; r_bit_index[2]       ; r_bit_index[1]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.746      ;
+; 0.620 ; r_clock_count[6]     ; r_state.TX_DATA_BITS ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.945      ;
+; 0.622 ; r_clock_count[1]     ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.743      ;
+; 0.623 ; r_clock_count[3]     ; r_state.TX_START_BIT ; CLOCK        ; CLOCK       ; 0.000        ; 0.241      ; 0.948      ;
+; 0.624 ; r_state.TX_START_BIT ; r_bit_index[2]       ; CLOCK        ; CLOCK       ; 0.000        ; 0.044      ; 0.752      ;
+; 0.633 ; r_state.CLEANUP      ; r_clock_count[1]     ; CLOCK        ; CLOCK       ; 0.000        ; 0.037      ; 0.754      ;
 +-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -931,10 +931,10 @@ No synchronizer chains to report.
 +------------------+---------+-------+----------+---------+---------------------+
 ; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -1.858  ; 0.186 ; N/A      ; N/A     ; -3.000              ;
-;  CLOCK           ; -1.858  ; 0.186 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -37.688 ; 0.0   ; 0.0      ; 0.0     ; -31.512             ;
-;  CLOCK           ; -37.688 ; 0.000 ; N/A      ; N/A     ; -31.512             ;
+; Worst-case Slack ; -1.808  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+;  CLOCK           ; -1.808  ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -33.573 ; 0.0   ; 0.0      ; 0.0     ; -31.824             ;
+;  CLOCK           ; -33.573 ; 0.000 ; N/A      ; N/A     ; -31.824             ;
 +------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -1012,7 +1012,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK      ; CLOCK    ; 501      ; 0        ; 0        ; 0        ;
+; CLOCK      ; CLOCK    ; 503      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1022,7 +1022,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK      ; CLOCK    ; 501      ; 0        ; 0        ; 0        ;
+; CLOCK      ; CLOCK    ; 503      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1106,7 +1106,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri Nov 20 23:43:37 2020
+    Info: Processing started: Mon Nov 23 17:55:26 2020
 Info: Command: quartus_sta UART_Transmitter -c UART_Transmitter
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1123,14 +1123,14 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.858
+Info (332146): Worst-case setup slack is -1.808
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.858             -37.688 CLOCK 
-Info (332146): Worst-case hold slack is 0.357
+    Info (332119):    -1.808             -33.573 CLOCK 
+Info (332146): Worst-case hold slack is 0.342
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.357               0.000 CLOCK 
+    Info (332119):     0.342               0.000 CLOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1143,14 +1143,14 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.572
+Info (332146): Worst-case setup slack is -1.506
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.572             -30.963 CLOCK 
-Info (332146): Worst-case hold slack is 0.311
+    Info (332119):    -1.506             -27.267 CLOCK 
+Info (332146): Worst-case hold slack is 0.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.311               0.000 CLOCK 
+    Info (332119):     0.298               0.000 CLOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1161,26 +1161,26 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.599
+Info (332146): Worst-case setup slack is -0.574
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.599             -10.672 CLOCK 
-Info (332146): Worst-case hold slack is 0.186
+    Info (332119):    -0.574              -8.264 CLOCK 
+Info (332146): Worst-case hold slack is 0.179
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.186               0.000 CLOCK 
+    Info (332119):     0.179               0.000 CLOCK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -31.512 CLOCK 
+    Info (332119):    -3.000             -31.824 CLOCK 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Fri Nov 20 23:43:39 2020
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Nov 23 17:55:29 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
