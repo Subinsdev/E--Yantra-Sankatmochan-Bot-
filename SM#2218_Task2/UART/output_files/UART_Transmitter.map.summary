@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Nov 20 23:43:25 2020
+Analysis & Synthesis Status : Successful - Mon Nov 23 17:55:16 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : UART_Transmitter
 Top-level Entity Name : UART_Transmitter
 Family : Cyclone IV E
-Total logic elements : 54
-    Total combinational functions : 54
+Total logic elements : 55
+    Total combinational functions : 55
     Dedicated logic registers : 27
 Total registers : 27
 Total pins : 12

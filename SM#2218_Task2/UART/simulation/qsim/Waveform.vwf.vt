@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/17/2020 22:59:20"
+// Generated on "11/23/2020 17:57:36"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          UART_Transmitter
 // 
@@ -48,7 +48,7 @@ UART_Transmitter i1 (
 );
 initial 
 begin 
-#8000000 $finish;
+#20000000 $finish;
 end 
 
 // CLOCK
@@ -58,57 +58,45 @@ begin
 	CLOCK = #20000 1'b1;
 	#20000;
 end 
-
-// TX_BYTE[7]
+// TX_BYTE[ 7 ]
 initial
 begin
 	TX_BYTE[7] = 1'b0;
 end 
-
-// TX_BYTE[6]
+// TX_BYTE[ 6 ]
 initial
 begin
-	TX_BYTE[6] = 1'b1;
-	TX_BYTE[6] = #1999000 1'b0;
+	TX_BYTE[6] = 1'b0;
 end 
-
-// TX_BYTE[5]
+// TX_BYTE[ 5 ]
 initial
 begin
 	TX_BYTE[5] = 1'b0;
 end 
-
-// TX_BYTE[4]
+// TX_BYTE[ 4 ]
 initial
 begin
-	TX_BYTE[4] = 1'b1;
-	TX_BYTE[4] = #1999000 1'b0;
+	TX_BYTE[4] = 1'b0;
 end 
-
-// TX_BYTE[3]
+// TX_BYTE[ 3 ]
 initial
 begin
 	TX_BYTE[3] = 1'b0;
 end 
-
-// TX_BYTE[2]
+// TX_BYTE[ 2 ]
 initial
 begin
 	TX_BYTE[2] = 1'b0;
 end 
-
-// TX_BYTE[1]
+// TX_BYTE[ 1 ]
 initial
 begin
-	TX_BYTE[1] = 1'b1;
-	TX_BYTE[1] = #1999000 1'b0;
+	TX_BYTE[1] = 1'b0;
 end 
-
-// TX_BYTE[0]
+// TX_BYTE[ 0 ]
 initial
 begin
-	TX_BYTE[0] = 1'b1;
-	TX_BYTE[0] = #1999000 1'b0;
+	TX_BYTE[0] = 1'b0;
 end 
 
 // TX_DATA_VALID
