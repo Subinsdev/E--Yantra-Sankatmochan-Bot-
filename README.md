@@ -8,3 +8,5 @@ This repo Contains all the works for building Sankatmochan bot
 - Task 0 : 19 October 2020
 - Task 1 : 02 November 2020
 - Task 2 : 23 November 2020
+- Task 3 : 23 December 2020
+- Task 4 : Soon...
