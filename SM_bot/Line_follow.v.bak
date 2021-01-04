@@ -1,0 +1,39 @@
+
+module Line_follow(
+			input analog_in0,
+			input analog_in1,
+			input analog_in2,
+			output speed_1,
+			output dir_1,
+			output speed_2,
+			output dir_2
+);
+	real nm_in0 = 0.18;
+	real nm_in1 = 2.20;
+	real nm_in2 = 0.18;
+	
+	real in0;
+	real in1;
+	real in2;
+	
+	real diff_in0;
+	real diff_in1;
+	real diff_in2;
+	// around 0.18v on bright surface and 2.2v on dark surface
+	// normal position is achieved when ino and in2 both less than 1
+	real var_speed_1;
+	real var_speed_2;
+	integer dir_1;
+	integer dir_2;
+	
+	in0 <= analog_in0;
+	in1 <= analog_in1;
+	in2 <= analog_in2;
+	
+	diff_in0 = nm_in0 - in0;
+	diff_in1 = nm_in1 - in1;
+	diff_in2 = nm_in2 - in2;
+	
+	
+	
+			
