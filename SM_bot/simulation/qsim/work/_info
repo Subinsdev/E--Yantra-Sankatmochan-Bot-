@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dell pc/Documents/e-yantra/E--Yantra-Sankatmochan-Bot-/SM_bot/simulation/qsim
+vhard_block
+Z1 !s110 1609602312
+!i10b 1
+!s100 YZ1E>h?HFO9m3HS<mjcFF2
+IAOT?>Gd457[Z[LA;W0zKf0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1609602311
+Z4 8SM_bot.vo
+Z5 FSM_bot.vo
+L0 1856
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1609602312.000000
+Z8 !s107 SM_bot.vo|
+Z9 !s90 -work|work|SM_bot.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vpwm
+R1
+!i10b 1
+!s100 UaG[Nz5mc^0bOnnAl=c4Q1
+ISOPPNzjjBg6A^i50XLTU`3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vpwm_vlg_vec_tst
+R1
+!i10b 1
+!s100 :13MP4DINE^_P79305UTj3
+I7m@D6PlVg_5;H_0]=iX<C2
+R2
+R0
+w1609602310
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11

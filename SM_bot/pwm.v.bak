@@ -1,0 +1,60 @@
+module pwm(
+				input dir_l;
+				input dir_r;
+				input speed_l;
+				input speed_r;
+				input clk;
+				output l_1;
+				output l_2;
+				output r_1;
+				output r_2;
+);
+	reg [31:0] counter;
+	reg pwm_l;
+	reg pwm_r;
+	
+	
+	always@(posedge clk)
+	begin
+		
+		if (counter < speed_l)
+			pwm_l = 1'b1;
+		
+		else
+			pwm_l = 1'b0;
+		
+		if (counter < speed_r)
+			pwm_r = 1'b1;
+			
+		else
+			pwm_r = 1'b0;
+		
+		counter = counter + 1;
+	end
+		
+	if (dir_l == 0)
+	begin
+		l_1 = 0;
+		l_2 = pwm_l;
+	end
+	
+	else
+	begin
+		l_1 = pwm_l;
+		l_2 = 0;
+	end
+	//////////
+	if (dir_r == 0)
+	begin
+		r_1 = 0;
+		r_2 = pwm_r;
+	end
+	
+	else
+	begin
+		r_1 = pwm_r;
+		r_2 = 0;
+	end
+	
+endmodule
+		
