@@ -1,0 +1,10 @@
+
+State Machine - |color_sense|r_state
+Name r_state.BLUE_READ r_state.BLUE_START r_state.GREEN_READ r_state.GREEN_START r_state.RED_READ r_state.RED_START r_state.IDLE 
+r_state.IDLE 0 0 0 0 0 0 0 
+r_state.RED_START 0 0 0 0 0 1 1 
+r_state.RED_READ 0 0 0 0 1 0 1 
+r_state.GREEN_START 0 0 0 1 0 0 1 
+r_state.GREEN_READ 0 0 1 0 0 0 1 
+r_state.BLUE_START 0 1 0 0 0 0 1 
+r_state.BLUE_READ 1 0 0 0 0 0 1 
