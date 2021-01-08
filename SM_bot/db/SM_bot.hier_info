@@ -1,4 +1,4 @@
-|custom_pwm
+|color_sense
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => counter[2].CLK
@@ -8,18 +8,24 @@ clk => counter[5].CLK
 clk => counter[6].CLK
 clk => counter[7].CLK
 clk => counter[8].CLK
-clk => counter[9].CLK
-clk => counter[10].CLK
-clk => counter[11].CLK
-clk => counter[12].CLK
-clk => counter[13].CLK
-clk => r_2~reg0.CLK
-clk => r_1~reg0.CLK
-clk => l_2~reg0.CLK
-clk => l_1~reg0.CLK
-l_1 <= l_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-l_2 <= l_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-r_1 <= r_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-r_2 <= r_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => out_s3.CLK
+clk => out_s2.CLK
+clk => out_color[0].CLK
+clk => out_color[1].CLK
+clk => r_state~1.DATAIN
+c_clk => c_counter[0].CLK
+c_clk => c_counter[1].CLK
+c_clk => c_counter[2].CLK
+c_clk => c_counter[3].CLK
+c_clk => c_counter[4].CLK
+c_clk => c_counter[5].CLK
+c_clk => c_counter[6].CLK
+c_clk => c_counter[7].CLK
+c_clk => c_counter[8].CLK
+color[0] << out_color[0].DB_MAX_OUTPUT_PORT_TYPE
+color[1] << out_color[1].DB_MAX_OUTPUT_PORT_TYPE
+color[2] << <GND>
+s2 << out_s2.DB_MAX_OUTPUT_PORT_TYPE
+s3 << out_s3.DB_MAX_OUTPUT_PORT_TYPE
 
 

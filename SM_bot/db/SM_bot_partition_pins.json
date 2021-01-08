@@ -4,15 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "l_1",
+					"name" : "color[0]",
 					"strict" : false
 				},
 				{
-					"name" : "r_1",
+					"name" : "color[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s2",
+					"strict" : false
+				},
+				{
+					"name" : "s3",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "c_clk",
 					"strict" : false
 				}
 			]
