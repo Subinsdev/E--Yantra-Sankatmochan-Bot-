@@ -4,27 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "color[0]",
+					"name" : "adc_din",
 					"strict" : false
 				},
 				{
-					"name" : "color[1]",
+					"name" : "pwm_l1",
 					"strict" : false
 				},
 				{
-					"name" : "s2",
+					"name" : "pwm_r1",
 					"strict" : false
 				},
 				{
-					"name" : "s3",
+					"name" : "pwm_r2",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "xbee_serial",
 					"strict" : false
 				},
 				{
-					"name" : "c_clk",
+					"name" : "xbee_done",
+					"strict" : false
+				},
+				{
+					"name" : "cs_s2",
+					"strict" : false
+				},
+				{
+					"name" : "cs_s3",
+					"strict" : false
+				},
+				{
+					"name" : "adc_rst",
+					"strict" : false
+				},
+				{
+					"name" : "xbee_data_valid",
+					"strict" : false
+				},
+				{
+					"name" : "adc_dout",
+					"strict" : false
+				},
+				{
+					"name" : "cs_data",
 					"strict" : false
 				}
 			]

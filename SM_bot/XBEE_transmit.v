@@ -2,10 +2,11 @@ module XBEE_transmit(
 				input CLOCK,
 				input TX_DATA_VALID,
 				input [2:0]color,
-				input [7:0]TX_BYTE,
+				input nodex,
 				output reg O_TX_SERIAL,
 				output O_TX_DONE);
-
+	// input [7:0]TX_BYTE removed for now may be added later 
+	// Time period 20ns freq = 50MHz
 	parameter clks_per_bit = 434;
 	parameter IDLE = 3'b000;
 	parameter TX_START_BIT = 3'B001;
@@ -21,18 +22,30 @@ module XBEE_transmit(
 	parameter CHARC = 8'b01000011;
 	parameter CHART = 8'b01010100;
 	parameter CHARW = 8'b01010111;
+	parameter CHARN = 8'b01001110;
+	parameter CHARO = 8'b01001111;
+	parameter CHARD = 8'b01000100;
+	parameter CHARE = 8'b01000101;
+	parameter ZERO = 8'b00110000;
 	
-	reg [3:0]next;
+	reg [3:0]next_limit;
+	reg [3:0]next = 9;
 	reg [2:0]r_state = IDLE;
 	reg [8:0]r_clock_count = 0;
 	reg [2:0]r_bit_index = 0;
 	reg [7:0]r_data_bits = 0;
 	reg r_TX_DONE = 0;
+	reg [3:0]node_num = 0;
+	reg c_next = 0;
+	wire _c_next;
 	
-	always @(color)
+	always @(color or nodex)
 	begin
-		if(color == 1 || color == 2 || color == 3)
-			next = 0;
+		if(color == 1 || color == 2 || color == 3 || nodex == 1)
+			c_next = ~c_next;
+			next_limit = (nodex == 1)? 4: 8;
+			if (nodex == 1)
+				node_num = node_num + 1'b1;
 	end
 	
 	always @(posedge CLOCK)
@@ -44,7 +57,9 @@ module XBEE_transmit(
 					r_bit_index = 0;
 					O_TX_SERIAL <= 1'b1;
 					r_TX_DONE <= 1'b1;
-					if(TX_DATA_VALID & next <=8)
+					if (c_next != _c_next)
+						next = 0;
+					if(TX_DATA_VALID & next <= next_limit)
 					begin
 						r_state <= TX_START_BIT;
 					end
@@ -66,15 +81,15 @@ module XBEE_transmit(
 						r_clock_count <= 0;
 						r_state <= TX_DATA_BITS;
 						if (next == 0)
-							r_data_bits = CHARS;
+							r_data_bits = (nodex == 1)? CHARN: CHARS;
 						else if (next == 1)
-							r_data_bits = CHARI;
+							r_data_bits = (nodex == 1)? CHARO: CHARI;
 						else if (next == 2)
-							r_data_bits = DASH;
+							r_data_bits = (nodex == 1)? CHARD: DASH;
 						else if (next == 3)
-							r_data_bits = CHARW;
+							r_data_bits = (nodex == 1)? CHARE: CHARW;
 						else if (next == 4)
-							r_data_bits = DASH;
+							r_data_bits = (nodex == 1)? (ZERO + node_num): DASH;
 						else if (next == 5)
 						begin
 							if(color == 1)
@@ -158,6 +173,7 @@ module XBEE_transmit(
 		endcase
 	end
 	
+	assign _c_next = (next == 0)? c_next: _c_next;
 	assign O_TX_DONE = r_TX_DONE;
-
+	
 endmodule 

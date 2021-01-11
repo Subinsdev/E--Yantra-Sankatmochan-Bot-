@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Jan 08 17:01:55 2021
+Analysis & Synthesis Status : Successful - Mon Jan 11 10:58:30 2021
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : SM_bot
-Top-level Entity Name : color_sense
+Top-level Entity Name : SM_bot_T
 Family : Cyclone IV E
-Total logic elements : 45
-    Total combinational functions : 45
-    Dedicated logic registers : 29
-Total registers : 29
-Total pins : 7
+Total logic elements : 405
+    Total combinational functions : 357
+    Dedicated logic registers : 132
+Total registers : 132
+Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1

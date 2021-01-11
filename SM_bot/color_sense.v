@@ -13,7 +13,7 @@ module color_sense(
 	parameter GREEN_READ = 3'b100;
 	parameter BLUE_START = 3'b101;
 	parameter BLUE_READ = 3'b110;
-	
+	// clk time period = 3333ns taking c_clk minimum timeperiod = 8333ns or max frequency = 120khz
 	// set the thresholds here
 	// To test the program is correct or not please simulate waveform6.vwf with these thresholds and the specified parameters
 	parameter R_THRESH_HIGH = 120;
