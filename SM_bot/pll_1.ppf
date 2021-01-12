@@ -4,6 +4,11 @@
 <global>
 <pin name="inclk0" direction="input" scope="external" source="clock"  />
 <pin name="c0" direction="output" scope="external" source="clock"  />
+<<<<<<< HEAD
+=======
+<pin name="c1" direction="output" scope="external" source="clock"  />
+<pin name="c2" direction="output" scope="external" source="clock"  />
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 
 </global>
 </pinplan>

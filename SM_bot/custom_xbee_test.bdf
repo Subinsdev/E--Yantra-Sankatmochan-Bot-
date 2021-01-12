@@ -1,0 +1,522 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -504 344 -336 360)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "inp_clk" (rect 5 0 40 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -504 360 -336 376)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "xbee_nodex" (rect 5 0 62 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -504 384 -328 400)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "xbee_data_valid" (rect 5 0 85 17)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1000 432 1176 448)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "xbee_serial" (rect 90 0 145 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1000 448 1176 464)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "xbee_done" (rect 90 0 141 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 176 320 336 400)
+	(text "custom_color_sense" (rect 5 0 106 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "c_clk" (rect 0 0 25 12)(font "Arial" ))
+		(text "c_clk" (rect 21 43 46 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "color[2..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "color[2..0]" (rect 98 27 147 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(parameter
+		"IDLE"
+		"000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RED_START"
+		"001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RED_READ"
+		"010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GREEN_START"
+		"011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GREEN_READ"
+		"100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BLUE_START"
+		"101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BLUE_READ"
+		"110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"R_THRESH_HIGH"
+		"120"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"R_THRESH_LOW"
+		"100"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"G_THRESH_HIGH"
+		"96"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"G_THRESH_LOW"
+		"68"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"B_THRESH_HIGH"
+		"99"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"B_THRESH_LOW"
+		"73"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 144 64))
+	)
+	(annotation_block (parameter)(rect 336 48 560 320))
+)
+(symbol
+	(rect 624 408 880 520)
+	(text "XBEE_transmit" (rect 5 0 78 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLOCK" (rect 0 0 37 12)(font "Arial" ))
+		(text "CLOCK" (rect 21 27 58 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "TX_DATA_VALID" (rect 0 0 83 12)(font "Arial" ))
+		(text "TX_DATA_VALID" (rect 21 43 104 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "color[2..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "color[2..0]" (rect 21 59 70 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "nodex" (rect 0 0 29 12)(font "Arial" ))
+		(text "nodex" (rect 21 75 50 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "O_TX_SERIAL" (rect 0 0 70 12)(font "Arial" ))
+		(text "O_TX_SERIAL" (rect 176 27 246 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "O_TX_DONE" (rect 0 0 63 12)(font "Arial" ))
+		(text "O_TX_DONE" (rect 182 43 245 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(parameter
+		"clks_per_bit"
+		"434"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IDLE"
+		"000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"TX_START_BIT"
+		"001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"TX_DATA_BITS"
+		"011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"TX_STOP_BIT"
+		"100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CLEANUP"
+		"101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HASH"
+		"00100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DASH"
+		"00101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARS"
+		"01010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARI"
+		"01001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARF"
+		"01000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARC"
+		"01000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHART"
+		"01010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARW"
+		"01010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARN"
+		"01001110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARO"
+		"01001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARD"
+		"01000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CHARE"
+		"01000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ZERO"
+		"00110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 240 96))
+	)
+	(annotation_block (parameter)(rect 880 24 1112 408))
+)
+(symbol
+	(rect -192 280 96 488)
+	(text "pll_1" (rect 128 0 159 16)(font "Arial" (font_size 10)))
+	(text "inst2" (rect 8 192 30 209)(font "Intel Clear" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 56 35 70)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 48 72))
+	)
+	(port
+		(pt 288 72)
+		(output)
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 270 56 284 70)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "c1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c1" (rect 270 80 284 94)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 288 120)
+		(output)
+		(text "c2" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c2" (rect 270 104 284 118)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone IV E" (rect 194 188 260 200)(font "Arial" ))
+		(text "inclk0 frequency: 50.000 MHz" (rect 58 66 205 78)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 58 82 177 94)(font "Arial" ))
+		(text "Clk " (rect 59 107 79 119)(font "Arial" ))
+		(text "Ratio" (rect 92 107 117 119)(font "Arial" ))
+		(text "Ph (dg)" (rect 132 107 167 119)(font "Arial" ))
+		(text "DC (%)" (rect 176 107 212 119)(font "Arial" ))
+		(text "c0" (rect 63 124 74 136)(font "Arial" ))
+		(text "1/1" (rect 98 124 113 136)(font "Arial" ))
+		(text "0.00" (rect 140 124 161 136)(font "Arial" ))
+		(text "50.00" (rect 181 124 208 136)(font "Arial" ))
+		(text "c1" (rect 63 141 74 153)(font "Arial" ))
+		(text "11/5000" (rect 84 141 122 153)(font "Arial" ))
+		(text "0.00" (rect 140 141 161 153)(font "Arial" ))
+		(text "50.00" (rect 181 141 208 153)(font "Arial" ))
+		(text "c2" (rect 63 158 74 170)(font "Arial" ))
+		(text "3/500" (rect 91 158 118 170)(font "Arial" ))
+		(text "0.00" (rect 140 158 161 170)(font "Arial" ))
+		(text "50.00" (rect 181 158 208 170)(font "Arial" ))
+		(line (pt 0 0)(pt 289 0))
+		(line (pt 289 0)(pt 289 209))
+		(line (pt 0 209)(pt 289 209))
+		(line (pt 0 0)(pt 0 209))
+		(line (pt 56 105)(pt 217 105))
+		(line (pt 56 121)(pt 217 121))
+		(line (pt 56 138)(pt 217 138))
+		(line (pt 56 155)(pt 217 155))
+		(line (pt 56 172)(pt 217 172))
+		(line (pt 56 105)(pt 56 172))
+		(line (pt 81 105)(pt 81 172)(line_width 3))
+		(line (pt 129 105)(pt 129 172)(line_width 3))
+		(line (pt 173 105)(pt 173 172)(line_width 3))
+		(line (pt 216 105)(pt 216 172))
+		(line (pt 48 56)(pt 255 56))
+		(line (pt 255 56)(pt 255 191))
+		(line (pt 48 191)(pt 255 191))
+		(line (pt 48 56)(pt 48 191))
+		(line (pt 287 72)(pt 255 72))
+		(line (pt 287 96)(pt 255 96))
+		(line (pt 287 120)(pt 255 120))
+	)
+)
+(connector
+	(pt 336 352)
+	(pt 512 352)
+	(bus)
+)
+(connector
+	(pt 512 352)
+	(pt 512 472)
+	(bus)
+)
+(connector
+	(pt 512 472)
+	(pt 624 472)
+	(bus)
+)
+(connector
+	(pt 96 352)
+	(pt 112 352)
+)
+(connector
+	(pt 112 352)
+	(pt 112 440)
+)
+(connector
+	(pt 112 440)
+	(pt 624 440)
+)
+(connector
+	(pt 96 376)
+	(pt 152 376)
+)
+(connector
+	(pt 152 376)
+	(pt 152 368)
+)
+(connector
+	(pt 152 368)
+	(pt 176 368)
+)
+(connector
+	(pt 96 400)
+	(pt 136 400)
+)
+(connector
+	(pt 136 400)
+	(pt 136 352)
+)
+(connector
+	(pt 136 352)
+	(pt 176 352)
+)
+(connector
+	(pt 624 456)
+	(pt 144 456)
+)
+(connector
+	(pt 144 456)
+	(pt 144 512)
+)
+(connector
+	(pt 144 512)
+	(pt -280 512)
+)
+(connector
+	(pt 624 488)
+	(pt 184 488)
+)
+(connector
+	(pt 184 488)
+	(pt 184 528)
+)
+(connector
+	(pt 184 528)
+	(pt -296 528)
+)
+(connector
+	(pt 880 440)
+	(pt 1000 440)
+)
+(connector
+	(pt 880 456)
+	(pt 1000 456)
+)
+(connector
+	(pt -144 200)
+	(pt -152 200)
+)
+(connector
+	(pt -192 352)
+	(pt -336 352)
+)
+(connector
+	(pt -296 528)
+	(pt -296 368)
+)
+(connector
+	(pt -336 368)
+	(pt -296 368)
+)
+(connector
+	(pt -280 512)
+	(pt -280 392)
+)
+(connector
+	(pt -280 392)
+	(pt -328 392)
+)

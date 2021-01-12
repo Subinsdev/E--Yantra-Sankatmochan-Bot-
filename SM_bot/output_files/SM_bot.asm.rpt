@@ -1,5 +1,9 @@
 Assembler report for SM_bot
+<<<<<<< HEAD
 Tue Jan 12 18:31:07 2021
+=======
+Tue Jan 12 19:54:07 2021
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -38,9 +42,15 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Tue Jan 12 18:31:07 2021 ;
 ; Revision Name         ; SM_bot                                ;
 ; Top-level Entity Name ; custom_pwm1                           ;
+=======
+; Assembler Status      ; Successful - Tue Jan 12 19:54:07 2021 ;
+; Revision Name         ; SM_bot                                ;
+; Top-level Entity Name ; custom_color_sense                    ;
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE22F17C6                          ;
 +-----------------------+---------------------------------------+
@@ -62,6 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 
 
+<<<<<<< HEAD
 +--------------------------------------+
 ; Assembler Device Options: SM_bot.sof ;
 +----------------+---------------------+
@@ -70,6 +81,16 @@ https://fpgasoftware.intel.com/eula.
 ; JTAG usercode  ; 0x00139A57          ;
 ; Checksum       ; 0x00139A57          ;
 +----------------+---------------------+
+=======
++--------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/dell pc/Documents/e-yantra/E--Yantra-Sankatmochan-Bot-/SM_bot/output_files/SM_bot.sof ;
++----------------+---------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                 ;
++----------------+---------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0013A935                                                                                              ;
+; Checksum       ; 0x0013A935                                                                                              ;
++----------------+---------------------------------------------------------------------------------------------------------+
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 
 
 +--------------------+
@@ -78,15 +99,26 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Tue Jan 12 18:31:06 2021
+=======
+    Info: Processing started: Tue Jan 12 19:54:05 2021
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SM_bot -c SM_bot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< HEAD
     Info: Peak virtual memory: 803 megabytes
     Info: Processing ended: Tue Jan 12 18:31:07 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
+=======
+    Info: Peak virtual memory: 4690 megabytes
+    Info: Processing ended: Tue Jan 12 19:54:07 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+>>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
 
 

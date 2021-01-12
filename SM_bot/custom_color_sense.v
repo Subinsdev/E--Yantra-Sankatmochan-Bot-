@@ -1,9 +1,7 @@
-module color_sense(
+module custom_color_sense(
 						input clk,
 						input c_clk,
-						output [2:0]color,
-						output s2,
-						output s3
+						output [2:0]color
 );
 	
 	parameter IDLE = 3'b000;
@@ -17,11 +15,11 @@ module color_sense(
 	// set the thresholds here
 	// To test the program is correct or not please simulate waveform6.vwf with these thresholds and the specified parameters
 	parameter R_THRESH_HIGH = 120;
-	parameter R_THRESH_LOW = 25;
-	parameter G_THRESH_HIGH = 120;
-	parameter G_THRESH_LOW = 25;
-	parameter B_THRESH_HIGH = 120;
-	parameter B_THRESH_LOW = 25;
+	parameter R_THRESH_LOW = 100;
+	parameter G_THRESH_HIGH = 96;
+	parameter G_THRESH_LOW = 68;
+	parameter B_THRESH_HIGH = 99;
+	parameter B_THRESH_LOW = 73;
 	
 	reg [8:0]counter;
 	reg [8:0]c_counter;
@@ -58,7 +56,7 @@ module color_sense(
 						else
 						begin
 							r_state <= GREEN_START;
-							if(c_counter < R_THRESH_HIGH && c_counter > R_THRESH_LOW)
+							if(c_counter <= R_THRESH_HIGH && c_counter >= R_THRESH_LOW)
 								out_color <= 1;
 						end
 						
@@ -80,7 +78,7 @@ module color_sense(
 						else
 						begin
 							r_state <= BLUE_START;
-							if(c_counter < G_THRESH_HIGH && c_counter > G_THRESH_LOW)
+							if(c_counter <= G_THRESH_HIGH && c_counter >= G_THRESH_LOW)
 								out_color <= 2;
 						end
 						
@@ -102,7 +100,7 @@ module color_sense(
 						else
 						begin
 							r_state <= IDLE;
-							if(c_counter < B_THRESH_HIGH && c_counter > B_THRESH_LOW)
+							if(c_counter <= B_THRESH_HIGH && c_counter >= B_THRESH_LOW)
 								out_color <= 3;
 						end
 						
@@ -122,8 +120,5 @@ module color_sense(
 		end
 								
 	assign color = out_color;
-	assign s2 = out_s2;
-	assign s3 = out_s3;
 	
-endmodule
-	
+endmodule 
