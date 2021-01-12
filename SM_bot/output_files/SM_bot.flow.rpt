@@ -1,5 +1,5 @@
 Flow report for SM_bot
-Mon Jan 04 12:58:17 2021
+Tue Jan 12 18:31:10 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jan 04 12:58:17 2021       ;
+; Flow Status                        ; Successful - Tue Jan 12 18:31:10 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; SM_bot                                      ;
-; Top-level Entity Name              ; Line_follow                                 ;
+; Top-level Entity Name              ; custom_pwm1                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 132 / 22,320 ( < 1 % )                      ;
-;     Total combinational functions  ; 132 / 22,320 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 0 / 22,320 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 66 / 154 ( 43 % )                           ;
+; Total logic elements               ; 35 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 32 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 16 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 16                                          ;
+; Total pins                         ; 5 / 154 ( 3 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/04/2021 12:56:13 ;
+; Start date & time ; 01/12/2021 18:30:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SM_bot              ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 66160497350483.160974517246360         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 4459188059839.161045645503250          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -87,13 +87,13 @@ https://fpgasoftware.intel.com/eula.
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Line_follow ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Line_follow ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Line_follow ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; custom_pwm1 ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; custom_pwm1 ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; custom_pwm1 ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; Line_follow                            ; SM_bot        ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; custom_pwm1                            ; SM_bot        ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -102,26 +102,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 4744 MB             ; 00:00:46                           ;
-; Fitter               ; 00:00:36     ; 1.0                     ; 5257 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4693 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 4768 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4648 MB             ; 00:00:02                           ;
-; Total                ; 00:01:31     ; --                      ; --                  ; 00:01:10                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 958 MB              ; 00:00:16                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 1523 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 803 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 836 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1021 MB             ; 00:00:00                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-PII1TLH  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-PII1TLH  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-PII1TLH  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-PII1TLH  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-PII1TLH  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                                     ;
++----------------------+-----------------------------------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname                              ; OS Name        ; OS Version ; Processor type ;
++----------------------+-----------------------------------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; amshra267-HP-Pavilion-Gaming-Laptop-15-dk0xxx ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Fitter               ; amshra267-HP-Pavilion-Gaming-Laptop-15-dk0xxx ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Assembler            ; amshra267-HP-Pavilion-Gaming-Laptop-15-dk0xxx ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; Timing Analyzer      ; amshra267-HP-Pavilion-Gaming-Laptop-15-dk0xxx ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; amshra267-HP-Pavilion-Gaming-Laptop-15-dk0xxx ; Ubuntu 20.04.1 ; 20         ; x86_64         ;
++----------------------+-----------------------------------------------+----------------+------------+----------------+
 
 
 ------------

@@ -1,0 +1,228 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 56 224 224 240)
+	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
+	(text "CLK_50" (rect 5 0 47 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 0 240 56 256))
+)
+(pin
+	(output)
+	(rect 904 224 1080 240)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "L1" (rect 90 0 104 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1080 240 1144 256))
+)
+(pin
+	(output)
+	(rect 904 240 1080 256)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "L2" (rect 90 0 102 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1080 256 1136 272))
+)
+(pin
+	(output)
+	(rect 904 256 1080 272)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "R1" (rect 90 0 104 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1080 272 1144 288))
+)
+(pin
+	(output)
+	(rect 904 272 1080 288)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "R2" (rect 90 0 104 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1080 288 1144 304))
+)
+(symbol
+	(rect 672 200 800 312)
+	(text "custom_pwm" (rect 5 0 71 11)(font "Arial" ))
+	(text "inst" (rect 8 96 26 107)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 15 11)(font "Arial" ))
+		(text "clk" (rect 21 27 36 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "l_1" (rect 0 0 16 11)(font "Arial" ))
+		(text "l_1" (rect 94 27 107 38)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32))
+	)
+	(port
+		(pt 128 48)
+		(output)
+		(text "l_2" (rect 0 0 16 11)(font "Arial" ))
+		(text "l_2" (rect 94 43 107 54)(font "Arial" ))
+		(line (pt 128 48)(pt 112 48))
+	)
+	(port
+		(pt 128 64)
+		(output)
+		(text "r_1" (rect 0 0 17 11)(font "Arial" ))
+		(text "r_1" (rect 93 59 107 70)(font "Arial" ))
+		(line (pt 128 64)(pt 112 64))
+	)
+	(port
+		(pt 128 80)
+		(output)
+		(text "r_2" (rect 0 0 17 11)(font "Arial" ))
+		(text "r_2" (rect 93 75 107 86)(font "Arial" ))
+		(line (pt 128 80)(pt 112 80))
+	)
+	(parameter
+		"NUM_C"
+		"11000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 112 96))
+	)
+	(annotation_block (parameter)(rect 800 168 976 200))
+)
+(symbol
+	(rect 336 168 576 320)
+	(text "pll1" (rect 110 0 135 16)(font "Arial" (font_size 10)))
+	(text "inst5" (rect 8 137 32 148)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 34 13)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 51 38 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 40 64))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "c0" (rect 0 0 15 13)(font "Arial" (font_size 8)))
+		(text "c0" (rect 225 51 240 64)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone IV E" (rect 167 138 231 149)(font "Arial" ))
+		(text "inclk0 frequency: 50.000 MHz" (rect 50 60 196 71)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 50 72 172 83)(font "Arial" ))
+		(text "Clk " (rect 51 91 71 102)(font "Arial" ))
+		(text "Ratio" (rect 71 91 98 102)(font "Arial" ))
+		(text "Ph (dg)" (rect 97 91 134 102)(font "Arial" ))
+		(text "DC (%)" (rect 132 91 169 102)(font "Arial" ))
+		(text "c0" (rect 54 104 66 115)(font "Arial" ))
+		(text "1/5" (rect 76 104 92 115)(font "Arial" ))
+		(text "0.00" (rect 103 104 126 115)(font "Arial" ))
+		(text "50.00" (rect 136 104 165 115)(font "Arial" ))
+		(line (pt 0 0)(pt 241 0))
+		(line (pt 241 0)(pt 241 153))
+		(line (pt 0 153)(pt 241 153))
+		(line (pt 0 0)(pt 0 153))
+		(line (pt 48 89)(pt 164 89))
+		(line (pt 48 101)(pt 164 101))
+		(line (pt 48 114)(pt 164 114))
+		(line (pt 48 89)(pt 48 114))
+		(line (pt 68 89)(pt 68 114)(line_width 3))
+		(line (pt 94 89)(pt 94 114)(line_width 3))
+		(line (pt 129 89)(pt 129 114)(line_width 3))
+		(line (pt 163 89)(pt 163 114))
+		(line (pt 40 48)(pt 207 48))
+		(line (pt 207 48)(pt 207 135))
+		(line (pt 40 135)(pt 207 135))
+		(line (pt 40 48)(pt 40 135))
+		(line (pt 239 64)(pt 207 64))
+	)
+)
+(connector
+	(pt 336 232)
+	(pt 224 232)
+)
+(connector
+	(pt 800 232)
+	(pt 904 232)
+)
+(connector
+	(pt 800 248)
+	(pt 904 248)
+)
+(connector
+	(pt 800 264)
+	(pt 904 264)
+)
+(connector
+	(pt 800 280)
+	(pt 904 280)
+)
+(connector
+	(pt 576 232)
+	(pt 672 232)
+)
