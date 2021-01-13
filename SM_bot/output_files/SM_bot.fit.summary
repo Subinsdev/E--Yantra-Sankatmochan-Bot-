@@ -1,30 +1,16 @@
-<<<<<<< HEAD
-Fitter Status : Successful - Tue Jan 12 18:31:06 2021
+Fitter Status : Successful - Wed Jan 13 15:45:22 2021
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : SM_bot
 Top-level Entity Name : custom_pwm1
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 35 / 22,320 ( < 1 % )
-    Total combinational functions : 32 / 22,320 ( < 1 % )
-    Dedicated logic registers : 16 / 22,320 ( < 1 % )
-Total registers : 16
-=======
-Fitter Status : Successful - Tue Jan 12 19:54:01 2021
-Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-Revision Name : SM_bot
-Top-level Entity Name : custom_color_sense
-Family : Cyclone IV E
-Device : EP4CE22F17C6
-Timing Models : Final
-Total logic elements : 48 / 22,320 ( < 1 % )
-    Total combinational functions : 48 / 22,320 ( < 1 % )
-    Dedicated logic registers : 27 / 22,320 ( < 1 % )
-Total registers : 27
->>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
-Total pins : 5 / 154 ( 3 % )
+Total logic elements : 228 / 22,320 ( 1 % )
+    Total combinational functions : 216 / 22,320 ( < 1 % )
+    Dedicated logic registers : 73 / 22,320 ( < 1 % )
+Total registers : 73
+Total pins : 11 / 154 ( 7 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

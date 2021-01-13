@@ -4,27 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-<<<<<<< HEAD
 					"name" : "L1",
 					"strict" : false
 				},
 				{
 					"name" : "R1",
-=======
-					"name" : "color[0]",
 					"strict" : false
 				},
 				{
-					"name" : "color[1]",
+					"name" : "R2",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "din",
 					"strict" : false
 				},
 				{
-					"name" : "c_clk",
->>>>>>> 3e564a117063c5d5c7e0864668bd0f47762d984d
+					"name" : "node_no",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "dout",
 					"strict" : false
 				}
 			]

@@ -62,22 +62,22 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 224 64)
 		(output)
-		(text "ADC_DATA_CH1[11..0]" (rect 0 0 103 12)(font "Arial" ))
-		(text "ADC_DATA_CH1[11..0]" (rect 100 59 203 71)(font "Arial" ))
+		(text "ADC_DATA_CH0[11..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "ADC_DATA_CH0[11..0]" (rect 98 59 203 71)(font "Arial" ))
 		(line (pt 224 64)(pt 208 64)(line_width 3))
 	)
 	(port
 		(pt 224 80)
 		(output)
-		(text "ADC_DATA_CH2[11..0]" (rect 0 0 105 12)(font "Arial" ))
-		(text "ADC_DATA_CH2[11..0]" (rect 98 75 203 87)(font "Arial" ))
+		(text "ADC_DATA_CH1[11..0]" (rect 0 0 103 12)(font "Arial" ))
+		(text "ADC_DATA_CH1[11..0]" (rect 100 75 203 87)(font "Arial" ))
 		(line (pt 224 80)(pt 208 80)(line_width 3))
 	)
 	(port
 		(pt 224 96)
 		(output)
-		(text "ADC_DATA_CH3[11..0]" (rect 0 0 105 12)(font "Arial" ))
-		(text "ADC_DATA_CH3[11..0]" (rect 98 91 203 103)(font "Arial" ))
+		(text "ADC_DATA_CH2[11..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "ADC_DATA_CH2[11..0]" (rect 98 91 203 103)(font "Arial" ))
 		(line (pt 224 96)(pt 208 96)(line_width 3))
 	)
 	(drawing
