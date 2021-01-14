@@ -1,2 +1,2 @@
 Warning (10268): Verilog HDL information at Line_follow.v(31): always construct contains both blocking and non-blocking assignments File: /media/amshra267/sa44/E--Yantra-Sankatmochan-Bot-/SM_bot/Line_follow.v Line: 31
-Warning (10268): Verilog HDL information at XBEE_transmit.v(51): always construct contains both blocking and non-blocking assignments File: /media/amshra267/sa44/E--Yantra-Sankatmochan-Bot-/SM_bot/XBEE_transmit.v Line: 51
+Warning (10268): Verilog HDL information at XBEE_transmit.v(50): always construct contains both blocking and non-blocking assignments File: /media/amshra267/sa44/E--Yantra-Sankatmochan-Bot-/SM_bot/XBEE_transmit.v Line: 50

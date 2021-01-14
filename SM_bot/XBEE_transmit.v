@@ -1,10 +1,7 @@
 module XBEE_transmit(
 				input CLOCK,
-				input TX_DATA_VALID,
 				input [2:0]color,
-				input nodex,
-				output reg O_TX_SERIAL,
-				output O_TX_DONE);
+				output reg O_TX_SERIAL);
 	// input [7:0]TX_BYTE removed for now may be added later 
 	// Time period 20ns freq = 50MHz
 	parameter clks_per_bit = 434;
@@ -28,6 +25,8 @@ module XBEE_transmit(
 	parameter CHARE = 8'b01000101;
 	parameter ZERO = 8'b00110000;
 	
+	reg TX_DATA_VALID = 1;//inputs
+	reg nodex = 0;//inputs
 	reg [3:0]next_limit;
 	reg [3:0]next = 9;
 	reg [2:0]r_state = IDLE;
@@ -174,6 +173,6 @@ module XBEE_transmit(
 	end
 	
 	assign _c_next = (next == 0)? c_next: _c_next;
-	assign O_TX_DONE = r_TX_DONE;
+	//assign O_TX_DONE = r_TX_DONE;
 	
 endmodule 
