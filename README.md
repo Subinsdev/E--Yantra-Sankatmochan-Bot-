@@ -4,7 +4,7 @@ This repo Contains all the works for building Sankatmochan bot for the theme con
 
 <p align="center">
  <b>FPGA used by us is of Altera</b><br> 
- <img  width="600" height="400" src="https://github.com/Amanmishra267/E--Yantra-Sankatmochan-Bot-/blob/main/FPGA.jpeg"><br>
+ <img  width="600" height="400" src="https://github.com/Amanmishra267/E--Yantra-Sankatmochan-Bot-/blob/main/FPGA.png"><br>
 </p>
 
 <p align="center">
