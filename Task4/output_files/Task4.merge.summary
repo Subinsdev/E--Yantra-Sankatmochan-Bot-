@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Thu Jan 21 21:17:49 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Task4
+Top-level Entity Name : custom_xbee_test
+Family : Cyclone IV E
+Total logic elements : 664
+    Total combinational functions : 536
+    Dedicated logic registers : 432
+Total registers : 432
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 128
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

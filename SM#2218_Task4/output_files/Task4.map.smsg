@@ -1,0 +1,5 @@
+Warning (10268): Verilog HDL information at XBEE.v(44): always construct contains both blocking and non-blocking assignments File: /home/amshra267/SM#2218_Task4/XBEE.v Line: 44
+Warning (10268): Verilog HDL information at White_Line_Following.v(58): always construct contains both blocking and non-blocking assignments File: /home/amshra267/SM#2218_Task4/White_Line_Following.v Line: 58
+Warning (10268): Verilog HDL information at Color_Sensor.v(67): always construct contains both blocking and non-blocking assignments File: /home/amshra267/SM#2218_Task4/Color_Sensor.v Line: 67
+Warning (10268): Verilog HDL information at Color_Sensor.v(184): always construct contains both blocking and non-blocking assignments File: /home/amshra267/SM#2218_Task4/Color_Sensor.v Line: 184
+Warning (10268): Verilog HDL information at detect_change.v(20): always construct contains both blocking and non-blocking assignments File: /home/amshra267/SM#2218_Task4/detect_change.v Line: 20
