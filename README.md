@@ -1,5 +1,5 @@
 # E-Yantra-Sankatmochan-Bot-
-This repo Contains all the works for building Sankatmochan bot for the theme conducted under eyantra'21, It consists of building and programming a bot which will able to leverage the parallel processing of FPGA. We successfully able to complete upto Task 3 and some part of Task-4.
+This repo Contains all the works for building Sankatmochan bot for the theme conducted under eyantra'21, It consists of building and programming a bot which will able to leverage the parallel processing of FPGA.
 
 
 <p align="center">
